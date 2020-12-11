@@ -17,9 +17,94 @@ p {line-height: 2}
 
 <!-- Header / Home-->
 <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
-  <div class="en w3-display-middle-high w3-text-dark-gray w3-center">
+  <div class="w3-text-dark-gray w3-center" style="padding-top: 2em;">
     <h1 class="w3-jumbo">National Union of the Homeless</h1>
+    <img src="img/nuh-ots-crop.jpg">
   </div>
 </header>
 
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">NUH</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <!-- TODO: For loop. -->
+      <a href="#mission" class="w3-bar-item w3-button">MISSION</a>
+      <a href="#events" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Events</a>
+      <a href="#locals" class="w3-bar-item w3-button"><i class="fa fa-th"></i> LOCALS</a>
+      <a href="#history" class="w3-bar-item w3-button"><i class="fa fa-user"></i> HISTORY</a>
+      <a href="#donate" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> DONATE</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <!-- TODO: For loop. -->
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<body>
+  <div class="w3-container" style="padding:128px 16px" id="mission">
+<h2 id="mission">Mission</h2>
+<p>Mission statement.</p>
+</div>
+<div class="w3-container" style="padding:128px 16px" id="events">
+<h2 id="events">Events</h2>
+<p>Fill in with dynamic list of events.</p>
+</div>
+<div class="w3-container" style="padding:128px 16px" id="locals">
+<h2 id="locals">Locals</h2>
+<p>Instructions on how to start a local.</p>
+</div>
+<div class="w3-container" style="padding:128px 16px" id="history">
+<h2 id="history">History</h2>
+<p>The National Union of the Homeless (NUH) originally formed in the late
+1980s and early 1990s in response to shifting economic conditions
+resulting in mass homelessness of families and former workers across
+our country. The formation of the shelter system that is a central
+part of the nonprofit industrial complex today formed at this time as
+well. From the shelters, encampments, and abandoned buildings folks
+came together to fight, speak out and organize against the very
+conditions that have made them homeless.</p>
+<p>In June 2019 organizers from across the country gathered in Washington
+DC at the Poor People’s Campaign: A National Call For Moral Revival’s
+Moral Congress. At this gathering we voted to form the Committee to
+Reestablish the NUH.</p>
+<p>Today the revitalized NUH has established multiple locals throughout
+11 states, we held our first Officer’s Trainer School Fall 2019 and we
+continue to grow throughout the country as we uphold the slogans,
+legacy and practices of the original NUH; such as &quot;You Only Get What
+You Are Organized To Take!,&quot; &quot;Homeless Not Helpless!,&quot; and &quot;Housing Now
+Not Death On The Streets!&quot;</p>
+<p>The NUH then and now is made up of members currently and formerly
+experiencing homelessness as well as organizers understanding this is
+a fight for the survival of all the poor and dispossessed in our
+nation. The power the NUH is proof that we can speak for ourselves,
+think for ourselves, and organize together to lead not just ourselves
+but the nation in changing the very system that continues to create
+homelessness every day in this country.</p>
+</div>
+<div class="w3-container" style="padding:128px 16px" id="donate">
+<h2 id="donate">Donate</h2>
+<p>DONATE</p>
+</div>
+<div class="w3-container" style="padding:128px 16px" id="contact">
+<p>For more information and to get involved contact:
+<a href="mailto:2020nuh@gmail.com">2020nuh@gmail.com</a></p>
+</div>
+
+</body>
 </html>
