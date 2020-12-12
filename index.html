@@ -11,9 +11,11 @@
 <style>
 body,h1,h2{font-family: "Raleway", sans-serif}
 body, html {height: 100%}
-p {line-height: 2}
-/* To align anchors. */
-h2 { padding-top: 1.5em; }
+h2 {
+    /* To align anchors. */
+    padding-top: 1.5em;
+    clear: both;
+}
 </style>
 <body class="w3-light-grey">
 
@@ -41,31 +43,31 @@ h2 { padding-top: 1.5em; }
       <!-- TODO: For loop. -->
       
       
-      <a href="#mission" class="w3-bar-item w3-button">MISSION</a>
+      <a href="#mission" class="w3-bar-item w3-button">mission</a>
       
       
       
-      <a href="#events" class="w3-bar-item w3-button"><i class="fas fa-bullhorn"></i> EVENTS</a>
+      <a href="#events" class="w3-bar-item w3-button"><i class="fas fa-bullhorn"></i> events</a>
       
       
       
-      <a href="#locals" class="w3-bar-item w3-button"><i class="fas fa-fist-raised"></i> LOCALS</a>
+      <a href="#locals" class="w3-bar-item w3-button"><i class="fas fa-fist-raised"></i> locals</a>
       
       
       
-      <a href="#history" class="w3-bar-item w3-button"><i class="fas fa-user"></i> HISTORY</a>
+      <a href="#history" class="w3-bar-item w3-button"><i class="fas fa-user"></i> history</a>
       
       
       
-      <a href="#solidarity" class="w3-bar-item w3-button"><i class="fas fa-hands-helping"></i> SOLIDARITY</a>
+      <a href="#solidarity" class="w3-bar-item w3-button"><i class="fas fa-hands-helping"></i> solidarity</a>
       
       
       
-      <a href="#donate" class="w3-bar-item w3-button"><i class="fas fa-donate"></i> DONATE</a>
+      <a href="#donate" class="w3-bar-item w3-button"><i class="fas fa-donate"></i> donate</a>
       
       
       
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fas fa-envelope"></i> CONTACT</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fas fa-envelope"></i> contact</a>
       
       
     </div>
@@ -79,26 +81,35 @@ h2 { padding-top: 1.5em; }
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top w3-card" style="margin-top:46px">
   
-  <a href="#mission" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">MISSION</a>
+  <a href="#mission" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">mission</a>
   
-  <a href="#events" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">EVENTS</a>
+  <a href="#events" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">events</a>
   
-  <a href="#locals" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">LOCALS</a>
+  <a href="#locals" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">locals</a>
   
-  <a href="#history" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">HISTORY</a>
+  <a href="#history" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">history</a>
   
-  <a href="#solidarity" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">SOLIDARITY</a>
+  <a href="#solidarity" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">solidarity</a>
   
-  <a href="#donate" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">DONATE</a>
+  <a href="#donate" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">donate</a>
   
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">CONTACT</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">contact</a>
   
 </div>
 
 <body>
   <div class="w3-container">
     <h2 id="mission">Mission</h2>
+<img class="w3-right w3-round w3-half" src='/img/ron-casanova.jpg'>
 <p>Mission statement.  Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.</p>
+<ul>
+<li>Praesent augue.</li>
+<li>Pellentesque tristique imperdiet tortor.</li>
+<li>Mauris ac felis vel velit tristique imperdiet.</li>
+<li>Nullam tristique diam non turpis.</li>
+<li>Nunc porta vulputate tellus.</li>
+<li>Phasellus neque orci, porta a, aliquet quis, semper a, massa.</li>
+</ul>
 <h2 id="events">Events</h2>
 <p>Introduction to events.  Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed pede.  Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing interdum, lacus tellus malesuada massa, quis varius mi purus non odio.  Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.  Curabitur vulputate vestibulum lorem.  Fusce sagittis, libero non molestie mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia eros.  Sed id ligula quis est convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam a sapien.</p>
 <div class="w3-row-padding">
@@ -118,12 +129,19 @@ h2 { padding-top: 1.5em; }
 </div>
 <h2 id="locals">Locals</h2>
 <p>Instructions on how to start a local.  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl.</p>
-<p><span style="color:red; font-style:bold;">TODO:</span>
-Fill in with dynamic list of locals.
-Organized as a table, including location.
-Potentially laid out on a map at some point.
-Link to dedicated page.</p>
+<div class="w3-container">
+<table class="w3-table w3-bordered w3-table-all">
+<colgroup>
+<col style="width:33%;">
+<col style="width:66%;">
+</colgroup>
+<tr class="w3-bordered"><th>Location</th><th>Name</th></tr>
+<tr class="w3-bordered"><td>Somewhere</td><td><a href="/locals/first/">Foo</a></td></tr>
+<tr class="w3-bordered"><td>Over there</td><td><a href="/locals/second/">Bar</a></td></tr>
+</table>
+</div>
 <h2 id="history">History</h2>
+<img class="w3-right w3-round w3-half" src='/img/getting-into-step.jpg'>
 <p>The National Union of the Homeless (NUH) originally formed in the late
 1980s and early 1990s in response to shifting economic conditions
 resulting in mass homelessness of families and former workers across
@@ -149,6 +167,7 @@ nation. The power the NUH is proof that we can speak for ourselves,
 think for ourselves, and organize together to lead not just ourselves
 but the nation in changing the very system that continues to create
 homelessness every day in this country.</p>
+<img class="w3-round w3-col" src='/img/reestablish-poster.jpg'>
 <h2 id="solidarity">Solidarity</h2>
 <p>Partner organizations:</p>
 <ul>
@@ -158,8 +177,15 @@ homelessness every day in this country.</p>
 </ul>
 <h2 id="donate">Donate</h2>
 <p><span style="color:red; font-style:bold;">TODO:</span> DONATE BUTTON</p>
-<p>For more information and to get involved contact:
-<a href="mailto:2020nuh@gmail.com">2020nuh@gmail.com</a></p>
+<p>
+<center>
+For more information and to get involved contact:
+<a href="mailto:2020nuh@gmail.com">2020nuh@gmail.com</a>
+</center>
+</p>
+<div class="w3-container">
+  <img class="w3-round w3-col" src='/img/only-get-what-organized-to-take.jpg'>
+</div>
 
   </div>
 </body>
