@@ -1,4 +1,5 @@
 ---
+layout: event
 tags: event
 date: 2020-12-09
 title: An event
