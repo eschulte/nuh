@@ -20,8 +20,16 @@ anchors:
 
 ## Mission
 
+<img class="w3-right w3-round w3-half" src='{{"/img/ron-casanova.jpg" | url }}'>
+
 Mission statement.  Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.
 
+* Praesent augue.
+* Pellentesque tristique imperdiet tortor.
+* Mauris ac felis vel velit tristique imperdiet.
+* Nullam tristique diam non turpis.
+* Nunc porta vulputate tellus.
+* Phasellus neque orci, porta a, aliquet quis, semper a, massa.
 
 ## Events
 
@@ -56,14 +64,22 @@ Introduction to events.  Nullam eu ante vel est convallis dignissim.  Fusce susc
 
 Instructions on how to start a local.  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl.
 
-<span style="color:red; font-style:bold;">TODO:</span>
-Fill in with dynamic list of locals.
-Organized as a table, including location.
-Potentially laid out on a map at some point.
-Link to dedicated page.
-
+<div class="w3-container">
+<table class="w3-table w3-bordered w3-table-all">
+<colgroup>
+<col style="width:33%;">
+<col style="width:66%;">
+</colgroup>
+<tr class="w3-bordered"><th>Location</th><th>Name</th></tr>
+{% for local in collections.local %}
+<tr class="w3-bordered"><td>{{local.data.location}}</td><td><a href="{{ local.url }}">{{local.data.name}}</a></td></tr>
+{% endfor %}
+</table>
+</div>
 
 ## History
+
+<img class="w3-right w3-round w3-half" src='{{"/img/getting-into-step.jpg" | url }}'>
 
 The National Union of the Homeless (NUH) originally formed in the late
 1980s and early 1990s in response to shifting economic conditions
@@ -94,6 +110,8 @@ think for ourselves, and organize together to lead not just ourselves
 but the nation in changing the very system that continues to create
 homelessness every day in this country.
 
+<img class="w3-round w3-col" src='{{"/img/reestablish-poster.jpg" | url }}'>
+
 ## Solidarity
 
 Partner organizations:
@@ -105,5 +123,13 @@ Partner organizations:
 
 <span style="color:red; font-style:bold;">TODO:</span> DONATE BUTTON
 
+<p>
+<center>
 For more information and to get involved contact:
 <a href="mailto:2020nuh@gmail.com">2020nuh@gmail.com</a>
+</center>
+</p>
+
+<div class="w3-container">
+  <img class="w3-round w3-col" src='{{"/img/only-get-what-organized-to-take.jpg" | url }}'>
+</div>

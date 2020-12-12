@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<title>{{ name }}</title>
+<meta charset="UTF-8">
+<meta name="description" content="{{ brief }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Design by Eric Schulte, source at https://github.com/eschulte/nuh. -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.0/css/all.css">
+<style>
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+/* To align anchors. */
+</style>
+<body>
+  <div class="w3-container">
+    <h1>{{ name }}</h1>
+    {{ content | safe }}
+  </div>
+</body>
+
+</html>
