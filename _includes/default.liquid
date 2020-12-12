@@ -19,72 +19,71 @@ h2 {
 </style>
 <body class="w3-light-grey">
 
-<!-- Header / Home-->
-<header class="w3-display-container w3-wide w3-grayscale-min" id="home">
-  <div class="w3-text-dark-gray w3-center" style="padding-top: 2em;">
-    <!-- Large and medium screens -->
-    <div class="w3-hide-small">
-      <h1 class="w3-jumbo">{{ title }}</h1>
-      <img alt="YOU ONLY GET WHAT YOU'RE ORGANIZED TO TAKE" src="img/nuh-ots-crop.jpg">
+  <!-- Header / Home-->
+  <header class="w3-display-container w3-wide w3-grayscale-min" id="home">
+    <div class="w3-text-dark-gray w3-center" style="padding-top: 2em;">
+      <!-- Large and medium screens -->
+      <div class="w3-hide-small">
+        <h1 class="w3-jumbo">{{ title }}</h1>
+        <img alt="YOU ONLY GET WHAT YOU'RE ORGANIZED TO TAKE" src="img/nuh-ots-crop.jpg">
+      </div>
+      <!-- Small screens -->
+      <div class="w3-hide-large w3-hide-medium">
+        <h1 class="w3-huge">{{ title }}</h1>
+      </div>
     </div>
-    <!-- Small screens -->
-    <div class="w3-hide-large w3-hide-medium">
-      <h1 class="w3-huge">{{ title }}</h1>
+  </header>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button w3-wide" onclick="navbar_hide()">NUH</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <!-- TODO: For loop. -->
+        {% for anchor in anchors %}
+        {% if anchor.icon %}
+        <a href="#{{ anchor.text }}" class="w3-bar-item w3-button"><i class="fas {{ anchor.icon }}"></i> {{ anchor.text | upper }}</a>
+        {% else %}
+        <a href="#{{ anchor.text }}" class="w3-bar-item w3-button">{{ anchor.text | upper }}</a>
+        {% endif %}
+        {% endfor %}
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="navbar_toggle()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
   </div>
-</header>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide" onclick="navbar_hide()">NUH</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <!-- TODO: For loop. -->
-      {% for anchor in anchors %}
-      {% if anchor.icon %}
-      <a href="#{{ anchor.text }}" class="w3-bar-item w3-button"><i class="fas {{ anchor.icon }}"></i> {{ anchor.text | upper }}</a>
-      {% else %}
-      <a href="#{{ anchor.text }}" class="w3-bar-item w3-button">{{ anchor.text | upper }}</a>
-      {% endif %}
-      {% endfor %}
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="navbar_toggle()">
-      <i class="fa fa-bars"></i>
-    </a>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top w3-card" style="margin-top:46px">
+    {% for anchor in anchors %}
+    <a href="#{{ anchor.text }}" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">{{ anchor.text | upper }}</a>
+    {% endfor %}
   </div>
-</div>
 
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top w3-card" style="margin-top:46px">
-  {% for anchor in anchors %}
-  <a href="#{{ anchor.text }}" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">{{ anchor.text | upper }}</a>
-  {% endfor %}
-</div>
-
-<body>
   <div class="w3-container">
     {{ content | safe }}
   </div>
 </body>
 
 <script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function navbar_toggle() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function navbar_toggle() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else { 
+          x.className = x.className.replace(" w3-show", "");
+      }
   }
-}
-function navbar_hide() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") != -1) {
-    x.className = x.className.replace(" w3-show", "");
+  function navbar_hide() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") != -1) {
+          x.className = x.className.replace(" w3-show", "");
+      }
   }
-}
 </script>
 
 </html>
