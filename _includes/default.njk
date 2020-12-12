@@ -7,7 +7,7 @@
 <!-- Design by Eric Schulte, source at https://github.com/eschulte/nuh. -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.0/css/all.css">
 <style>
 body,h1,h2{font-family: "Raleway", sans-serif}
 body, html {height: 100%}
@@ -41,7 +41,7 @@ h2 { padding-top: 1.5em; }
       <!-- TODO: For loop. -->
       {% for anchor in anchors %}
       {% if anchor.icon %}
-      <a href="#{{ anchor.text }}" class="w3-bar-item w3-button"><i class="fa {{ anchor.icon }}"></i> {{ anchor.text | upper }}</a>
+      <a href="#{{ anchor.text }}" class="w3-bar-item w3-button"><i class="fas {{ anchor.icon }}"></i> {{ anchor.text | upper }}</a>
       {% else %}
       <a href="#{{ anchor.text }}" class="w3-bar-item w3-button">{{ anchor.text | upper }}</a>
       {% endif %}

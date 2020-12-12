@@ -4,28 +4,49 @@ title: National Union of the Homeless
 anchors:
   - text: mission
   - text: events
-    icon: fa-th
+    icon: fa-bullhorn # consider: fa-calendar, fa-bullhorn, fa-th (grid)
   - text: locals
-    icon: fa-th
+    icon: fa-fist-raised
   - text: history
-    icon: fa-user
+    icon: fa-user # consider fa-landmark
   - text: donate
-    icon: fa-usd
+    icon: fa-donate
   - text: contact
     icon: fa-envelope
 ---
 
 ## Mission
 
-Mission statement.
+Mission statement.  Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.
+
 
 ## Events
 
 <span style="color:red; font-style:bold;">TODO:</span> Fill in with dynamic list of events.
 
+* Nullam eu ante vel est convallis dignissim.
+* Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.
+* Pellentesque dapibus suscipit ligula.
+* Pellentesque dapibus suscipit ligula.
+* Pellentesque tristique imperdiet tortor.
+
 ## Locals
 
 <span style="color:red; font-style:bold;">TODO:</span>Instructions on how to start a local.
+
+* Curabitur lacinia pulvinar nibh.
+* Pellentesque tristique imperdiet tortor.
+* Nam a sapien.
+* Donec pretium posuere tellus.
+* Nulla posuere.
+* Nulla posuere.
+* Nam a sapien.
+* Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.
+* Aenean in sem ac leo mollis blandit.
+* Nunc rutrum turpis sed pede.
+* Fusce commodo.
+* Aenean in sem ac leo mollis blandit.
+
 
 ## History
 
