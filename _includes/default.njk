@@ -12,51 +12,77 @@
 body,h1,h2{font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 p {line-height: 2}
+/* To align anchors. */
+h2 { padding-top: 1.5em; }
 </style>
 <body class="w3-light-grey">
 
 <!-- Header / Home-->
-<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+<header class="w3-display-container w3-wide w3-grayscale-min" id="home">
   <div class="w3-text-dark-gray w3-center" style="padding-top: 2em;">
-    <h1 class="w3-jumbo">{{ title }}</h1>
-    <img src="img/nuh-ots-crop.jpg">
+    <!-- Large and medium screens -->
+    <div class="w3-hide-small">
+      <h1 class="w3-jumbo">{{ title }}</h1>
+      <img src="img/nuh-ots-crop.jpg">
+    </div>
+    <!-- Small screens -->
+    <div class="w3-hide-large w3-hide-medium">
+      <h1 class="w3-huge">{{ title }}</h1>
+    </div>
   </div>
 </header>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">NUH</a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide" onclick="navbar_hide()">NUH</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <!-- TODO: For loop. -->
-      <a href="#mission" class="w3-bar-item w3-button">MISSION</a>
-      <a href="#events" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Events</a>
-      <a href="#locals" class="w3-bar-item w3-button"><i class="fa fa-th"></i> LOCALS</a>
-      <a href="#history" class="w3-bar-item w3-button"><i class="fa fa-user"></i> HISTORY</a>
-      <a href="#donate" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> DONATE</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      {% for anchor in anchors %}
+      {% if anchor.icon %}
+      <a href="#{{ anchor.text }}" class="w3-bar-item w3-button"><i class="fa {{ anchor.icon }}"></i> {{ anchor.text | upper }}</a>
+      {% else %}
+      <a href="#{{ anchor.text }}" class="w3-bar-item w3-button">{{ anchor.text | upper }}</a>
+      {% endif %}
+      {% endfor %}
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="navbar_toggle()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 </div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <!-- TODO: For loop. -->
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top w3-card" style="margin-top:46px">
+  {% for anchor in anchors %}
+  <a href="#{{ anchor.text }}" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">{{ anchor.text | upper }}</a>
+  {% endfor %}
+</div>
 
 <body>
-  {{ content | safe }}
+  <div class="w3-container">
+    {{ content | safe }}
+  </div>
 </body>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function navbar_toggle() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+function navbar_hide() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") != -1) {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
 </html>

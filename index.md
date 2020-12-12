@@ -1,30 +1,31 @@
 ---
 layout: default
 title: National Union of the Homeless
+anchors:
+  - text: mission
+  - text: events
+    icon: fa-th
+  - text: locals
+    icon: fa-th
+  - text: history
+    icon: fa-user
+  - text: donate
+    icon: fa-usd
+  - text: contact
+    icon: fa-envelope
 ---
-
-<div class="w3-container" style="padding:128px 16px" id="mission">
 
 ## Mission
 
 Mission statement.
 
-</div>
-<div class="w3-container" style="padding:128px 16px" id="events">
-
 ## Events
 
-Fill in with dynamic list of events.
-
-</div>
-<div class="w3-container" style="padding:128px 16px" id="locals">
+<span style="color:red; font-style:bold;">TODO:</span> Fill in with dynamic list of events.
 
 ## Locals
 
-Instructions on how to start a local.
-
-</div>
-<div class="w3-container" style="padding:128px 16px" id="history">
+<span style="color:red; font-style:bold;">TODO:</span>Instructions on how to start a local.
 
 ## History
 
@@ -57,18 +58,9 @@ think for ourselves, and organize together to lead not just ourselves
 but the nation in changing the very system that continues to create
 homelessness every day in this country.
 
-</div>
-<div class="w3-container" style="padding:128px 16px" id="donate">
-
 ## Donate
 
 DONATE
 
-</div>
-<div class="w3-container" style="padding:128px 16px" id="contact">
-
-
 For more information and to get involved contact:
 <a href="mailto:2020nuh@gmail.com">2020nuh@gmail.com</a>
-
-</div>
