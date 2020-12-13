@@ -7,8 +7,6 @@ Contact the National Union of the Homeless
 ==========================================
 
 <form id="contact-form" method="post" action="https://us-central1-winged-comfort-298422.cloudfunctions.net/contact-form">
-  <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-  <input type="hidden" name="action" value="validate_captcha">
   <label for="fname">First Name:</label><br>
   <input type="text" id="fname" name="fname"><br>
   <label for="lname">Last Name:</label><br>

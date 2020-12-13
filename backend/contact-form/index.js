@@ -1,3 +1,5 @@
+var util = require("util")
+
 // Import the Secret Manager client and instantiate it:
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const client = new SecretManagerServiceClient();
@@ -139,7 +141,7 @@ const verifyRecaptcha = async (req, res) => {
 
 // Exported functions.
 exports.contactForm = async (req, res) => {
-  console.log("Request: "+JSON.stringify(req))
+  // console.log("Request: "+util.inspect(req))
 
   // res.set('Access-Control-Allow-Origin', 'nationalunionofthehomeless.org');
   res.set('Access-Control-Allow-Origin', '*');
