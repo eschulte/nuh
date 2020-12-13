@@ -54,5 +54,8 @@ exports.helloSecret = (req, res) => {
     // let message = req.query.message || req.body.message || 'Hello NUH!';
     // res.status(200).send(message);
     res.set('Access-Control-Allow-Origin', '*');
-    return res.status(200).send(secret)
+    return secret.then(
+        function (result){ return res.status(200).send("HELLO SECRET: " + secret); },
+        function (error){ return res.status(200).send("HELLO ERROR: " + error); },
+    )
 }
