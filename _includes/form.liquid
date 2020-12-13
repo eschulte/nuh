@@ -15,12 +15,24 @@ body, html {height: 100%}
 /* To align anchors. */
 </style>
 <body class="w3-light-grey">
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="{{ "/" | url }}" class="w3-bar-item w3-button w3-wide" onclick="navbar_hide()">NUH</a>
+    </div>
+  </div>
+  <div style="padding-top:2em;">
+  </div>
+
   <div class="w3-container">
     <h1>{{ name }}</h1>
     {{ content | safe }}
   </div>
 </body>
 <script>
+  function onSubmit(token){
+    document.getElementById("{{ form-id }}").submit();
+  }
   document.forms['{{ form-id }}'].addEventListener('submit', (event) => {
     event.preventDefault();
     // TODO: do something here to show user that form is being submitted

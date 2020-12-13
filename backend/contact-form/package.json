@@ -4,8 +4,10 @@
   "dependencies": {
     "@google-cloud/secret-manager": "^3.2.3",
     "http-response-object": "^3.0.2",
+    "isomorphic-fetch": "^3.0.0",
     "node-mocks-http": "^1.9.0",
     "nodemailer": "^6.4.17",
-    "promise-mysql": "^5.0.1"
+    "promise-mysql": "^5.0.1",
+    "isomorphic-fetch": "^3.0.0"
   }
 }

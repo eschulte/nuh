@@ -13,12 +13,14 @@ async function accessSecret(name) {
  email_address,
  email_password,
  db_user,
- db_pass] = [
+ db_pass,
+ recaptcha_secret_key] = [
   accessSecret("my-secret").then((result)=>{return result}),
   accessSecret("email-address").then((result)=>{return result}),
   accessSecret("email-password").then((result)=>{return result}),
   accessSecret("db-user").then((result)=>{return result}),
   accessSecret("db-pass").then((result)=>{return result}),
+  accessSecret("recaptcha-secret-key").then((result)=>{return result}),
 ]
 
 // Initiate the mailer.
@@ -107,10 +109,39 @@ const createPoolAndEnsureSchema = async () =>
 // testing different configurations.
 let pool = createPoolAndEnsureSchema();
 
+// Recaptcha verification.
+const fetch = require('isomorphic-fetch');
+const verifyRecaptcha = async (req, res) => {
+  const secret_key = (await recaptcha_secret_key);
+  console.log("REQ: "+JSON.stringify(req.body))
+  const token = req.body["g-recaptcha-response"];
+  const url = `https://www.google.com/recaptcha/api/siteverify?secret=${secret_key}&response=${token}`;
+
+  fetch(url, { method: 'post' })
+    .then(response => response.json())
+    .then(google_response => {
+      if (google_response.score < 0.5){
+        console.log("Recaptcha score too low.")
+        res.status(403).send("Recaptcha score too low.  I think you're a robot.")
+      }
+    }
+         )
+    .catch(error => {
+      console.error("Recaptcha error: " + error)
+      res.status(500).send("Recaptcha error.")
+    });
+  return true;
+};
+
 // Exported functions.
 exports.contactForm = async (req, res) => {
   // res.set('Access-Control-Allow-Origin', 'nationalunionofthehomeless.org');
   res.set('Access-Control-Allow-Origin', '*');
+
+  // Test the recaptcha.
+  if (true == (await verifyRecaptcha(req, res))){
+    console.log("Verified Recaptcha.")
+  }
 
   // Email the contact forward.
   let mailTransporter = nodemailer.createTransport({
