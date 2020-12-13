@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Design by Eric Schulte, source at https://github.com/eschulte/nuh. -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.0/css/all.css">
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<style>
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+/* To align anchors. */
+</style>
+<body class="w3-light-grey">
+  <div class="w3-container">
+    <h1></h1>
+    <h1 id="contact">Contact</h1>
+<form id="contact-form" method="post" action="https://us-central1-winged-comfort-298422.cloudfunctions.net/contact-form">
+  <!-- <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response"> -->
+  <!-- <input type="hidden" name="action" value="validate_captcha"> -->
+  <label for="first-name">First Name:</label><br>
+  <input type="text" id="first-name" id="first-name"><br>
+  <label for="last-name">Last Name:</label><br>
+  <input type="text" id="last-name" id="last-name"><br>
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" id="email"><br>
+  <label for="comment">Comment:</label><br>
+  <textarea name="comment"></textarea><br>
+  <button>Submit</button>
+  <!-- <button class="g-recaptcha" -->
+  <!--         data-sitekey="6LetGwQaAAAAAHWY2Wuv469KoCvz_Fn0pm868xfe" -->
+  <!--         data-callback='onSubmit' -->
+  <!--         data-action='submit'>Submit</button> -->
+</form>
+
+  </div>
+</body>
+<script>
+document.forms['contact-form'].addEventListener('submit', (event) => {
+    event.preventDefault();
+    // TODO do something here to show user that form is being submitted
+    fetch(event.target.action, {
+        method: 'POST',
+        body: new URLSearchParams(new FormData(event.target)) // event.target is the form
+    }).then((resp) => {
+        console.log(resp)
+        return resp.text(); // or resp.json() or whatever the server sends
+    }).then((body) => {
+        console.log("Server response: " + body)
+    }).catch((error) => {
+        alert("Error: " + error)
+    });
+});
+</script>
+</html>
