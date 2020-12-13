@@ -9,10 +9,16 @@ async function accessSecret(name) {
   const responsePayload = accessResponse.payload.data.toString('utf8');
   return responsePayload;
 }
-[secret, email_address, email_password] = [
+[secret,
+ email_address,
+ email_password,
+ db_user,
+ db_pass] = [
   accessSecret("my-secret").then((result)=>{return result}),
   accessSecret("email-address").then((result)=>{return result}),
   accessSecret("email-password").then((result)=>{return result}),
+  accessSecret("db-user").then((result)=>{return result}),
+  accessSecret("db-pass").then((result)=>{return result}),
 ]
 
 // Initiate the mailer.
@@ -26,8 +32,8 @@ const createUnixSocketPool = async config => {
 
   // Establish a connection to the database
   return await mysql.createPool({
-    user: process.env.DB_USER,
-    password: process.env.DB_PASS,
+    user: (await db_user),
+    password: (await db_pass),
     database: process.env.DB_NAME,
     socketPath: `${dbSocketPath}/${process.env.CLOUD_SQL_CONNECTION_NAME}`,
   });
@@ -74,7 +80,7 @@ CREATE TABLE IF NOT EXISTS people
 
   await pool.query(
     `
-CREATE TABLE IF NOT EXISTS contacts
+CREATE TABLE IF NOT EXISTS messages
       ( id serial NOT NULL,
         time timestamp DEFAULT CURRENT_TIMESTAMP NOT NULL,
         person_id bigint unsigned NOT NULL,
@@ -82,7 +88,7 @@ CREATE TABLE IF NOT EXISTS contacts
         PRIMARY KEY (id),
         FOREIGN KEY (person_id) REFERENCES people(id) );`
   );
-  console.log("Ensured that 'contacts' table exists.");
+  console.log("Ensured that 'messages' table exists.");
 };
 
 const createPoolAndEnsureSchema = async () =>
@@ -134,7 +140,7 @@ exports.contactForm = async (req, res) => {
   // Save the contact in the database.
   pool = await pool
   try {
-    const stmt = 'REPLACE INTO people (first_name, last_name, email) VALUES (?, ?, ?)';
+    const stmt = `REPLACE INTO people (first_name, last_name, email) VALUES (?, ?, ?);`;
     // Pool.query automatically checks out, uses, and releases a connection
     // back into the pool, ensuring it is always returned successfully.
     await pool.query(stmt, [req.body.fname, req.body.lname, req.body.email]);
@@ -150,8 +156,30 @@ exports.contactForm = async (req, res) => {
       )
       .end();
   }
+  console.log("Ensured "+req.body.email+" in people.")
 
-  res.status(200).send("Contact successful.");  
+  try {
+    const stmt = `
+INSERT INTO messages(content, person_id)
+VALUES (?, (SELECT id FROM people WHERE email = ?));`
+    // Pool.query automatically checks out, uses, and releases a connection
+    // back into the pool, ensuring it is always returned successfully.
+    await pool.query(stmt, [req.body.content, req.body.email]);
+  } catch (err) {
+    // If something goes wrong, handle the error in this section. This might
+    // involve retrying or adjusting parameters depending on the situation.
+    // [START_EXCLUDE]
+    console.error("[DATABASE]: " + err);
+    // return res
+    //   .status(500)
+    //   .send(
+    //     'Unable to initiate contact! Please check the application logs for more details.'
+    //   )
+    //   .end();
+  }
+  console.log("Ensured "+req.body.email+" in people.")
+
+  res.status(200).send("Contact successful.");
 };
 
 // Simple function for testing Secret access.
