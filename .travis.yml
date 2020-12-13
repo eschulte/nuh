@@ -5,7 +5,7 @@ before_script:
   - npm install @11ty/eleventy -g
   - npm install markdown-it markdown-it-anchor
 script:
-  - eleventy
+  - eleventy --pathprefix="/nuh/"
   # Once domain is re-configured.
   # - echo -n nationalunionofthehomeless.org > _site/CNAME
 deploy:
