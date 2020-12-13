@@ -140,7 +140,7 @@ exports.contactForm = async (req, res) => {
   // Save the contact in the database.
   pool = await pool
   try {
-    const stmt = `REPLACE INTO people (first_name, last_name, email) VALUES (?, ?, ?);`;
+    const stmt = `INSERT IGNORE INTO people (first_name, last_name, email) VALUES (?, ?, ?);`;
     // Pool.query automatically checks out, uses, and releases a connection
     // back into the pool, ensuring it is always returned successfully.
     await pool.query(stmt, [req.body.fname, req.body.lname, req.body.email]);
