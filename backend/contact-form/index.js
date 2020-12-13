@@ -228,21 +228,21 @@ exports.helloSecret = async (req, res) => {
   res.status(200).send("HELLO "+req.body.fname+" "+req.body.lname+" SECRET " + await secret);
 }
 
-// Testing
-var mocks = require('node-mocks-http');
-
-var response = mocks.createResponse()
-var request = mocks.createRequest({
-  method: 'POST',
-  url: 'blargh',
-  body: {
-    fname : "John",
-    lname : "Doe",
-    email : "john.doe@gmail.com",
-    content : "This is the body of my contact form.",
-  }
-})
-
-// exports.helloSecret(request, response)
-
-exports.contactForm(request, response)
+// // Testing
+// var mocks = require('node-mocks-http');
+//
+// var response = mocks.createResponse()
+// var request = mocks.createRequest({
+//   method: 'POST',
+//   url: 'blargh',
+//   body: {
+//     fname : "John",
+//     lname : "Doe",
+//     email : "john.doe@gmail.com",
+//     content : "This is the body of my contact form.",
+//   }
+// })
+//
+// // exports.helloSecret(request, response)
+//
+// exports.contactForm(request, response)
