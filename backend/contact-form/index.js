@@ -32,8 +32,9 @@ exports.contactForm = async (req, res) => {
   let mailDetails = {
     from: await email_address,
     to: await email_address,
+    reply-to: req.body.email
     subject: 'Test mail',
-    text: 'Node.js testing mail for NUH.'
+    text: req.body.content
   };
 
   mailTransporter.sendMail(mailDetails, function(err, data) {
@@ -51,9 +52,8 @@ exports.contactForm = async (req, res) => {
 exports.helloSecret = async (req, res) => {
   res.set('Access-Control-Allow-Origin', '*');
   console.log(await secret)
-  console.log(req.body)
-  console.log(req.body["first-name"])
-  res.status(200).send("HELLO "+req.body["first-name"]+" SECRET " + await secret);
+  console.log(req)
+  res.status(200).send("HELLO "+req.body.fname+" "+req.body.lname+" SECRET " + await secret);
 }
 
 // Testing
