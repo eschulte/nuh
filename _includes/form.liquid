@@ -21,23 +21,20 @@ body, html {height: 100%}
   </div>
 </body>
 <script>
-  function submit() {
-    console.log("I've been called.")
-    // document.getElementById("contact-form").submit();
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://us-central1-winged-comfort-298422.cloudfunctions.net/contact-form"); 
-    xhr.onload = function(event){ 
-        alert("Success, server responded with: " + event.target.response); // raw response
-    }; 
-    // or onerror, onabort
-    xhr.onerror = function(event){ 
-        alert("There was an error uploading your form: " + event);
-    }; 
-    xhr.onabort = function(event){ 
-        alert("There was an error uploading your form: " + event);
-    }; 
-    var formData = new FormData(document.getElementById("contact-form")); 
-    xhr.send(formData);
-}
+document.forms['{{ form-id }}'].addEventListener('submit', (event) => {
+    event.preventDefault();
+    // TODO do something here to show user that form is being submitted
+    fetch(event.target.action, {
+        method: 'POST',
+        body: new URLSearchParams(new FormData(event.target)) // event.target is the form
+    }).then((resp) => {
+        console.log(resp)
+        return resp.text(); // or resp.json() or whatever the server sends
+    }).then((body) => {
+        console.log("Server response: " + body)
+    }).catch((error) => {
+        alert("Error: " + error)
+    });
+});
 </script>
 </html>
