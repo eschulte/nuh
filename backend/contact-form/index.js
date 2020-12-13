@@ -30,11 +30,11 @@ async function accessSecret(name) {
 ]
 
 // Initiate the mailer.
-const getMailgun = async () => {
-  return require('mailgun-js')({apiKey: "4879ff27-0ea06053",
-                                domain: "sandboxb9c676ef3aaa4c85bc13f9e3dd9325d8.mailgun.org"});
+const mailgun = require("mailgun-js")
+const startupMailgun = async () => {
+  return mailgun({apiKey: (await mailgun_api_key), domain: (await mailgun_domain)});
 }
-var mailgun = getMailgun()
+let mg = startupMailgun();
 
 // Initiate the database.
 // https://github.com/GoogleCloudPlatform/nodejs-docs-samples/blob/master/cloud-sql/mysql/mysql/server.js
@@ -156,20 +156,19 @@ exports.contactForm = async (req, res) => {
   if (true == (await verifyRecaptcha(req, res))){ console.log("Verified Recaptcha."); }
 
   // Email the contact forward.
-  mailgun = await mailgun
-  data = {
-    from: "schulte.eric@gmail.com",
-    to: "schulte.eric@gmail.com",
-    // replyTo: req.body.email,
+  mg = await mg
+  const data = {
+    from: (await email_address),
+    to: (await email_address),
+    replyTo: req.body.email,
     subject: "NUH contact from " + req.body.fname + " " + req.body.lname,
     text: req.body.content,
   }
-  console.log("Mail: " + util.inspect(data))
-  mailgun.messages().send(data, function (err, info) {
-    if(err){
-      console.error("[MAILGUN]: " + err)
+  mg.messages().send(data, function (error, body) {
+    if (error){
+      console.error(error);
     } else {
-      console.log(info)
+      console.log(body);
     }
   });
 
