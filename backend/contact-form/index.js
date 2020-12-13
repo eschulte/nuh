@@ -13,13 +13,17 @@ async function accessSecret(name) {
 }
 [secret,
  email_address,
- email_password,
+ mailgun_api_key,
+ mailgun_password,
+ mailgun_domain,
  db_user,
  db_pass,
  recaptcha_secret_key] = [
   accessSecret("my-secret").then((result)=>{return result}),
   accessSecret("email-address").then((result)=>{return result}),
-  accessSecret("email-password").then((result)=>{return result}),
+  accessSecret("mailgun-api-key").then((result)=>{return result}),
+  accessSecret("mailgun-password").then((result)=>{return result}),
+  accessSecret("mailgun-domain").then((result)=>{return result}),
   accessSecret("db-user").then((result)=>{return result}),
   accessSecret("db-pass").then((result)=>{return result}),
   accessSecret("recaptcha-secret-key").then((result)=>{return result}),
@@ -27,6 +31,16 @@ async function accessSecret(name) {
 
 // Initiate the mailer.
 const nodemailer = require('nodemailer');
+var mg = require('nodemailer-mailgun-transport');
+const ensureMailgun = async () => {
+  var auth = {
+    auth: {
+      api_key: (await mailgun_api_key),
+      domain: (await mailgun_domain)
+    }
+  }
+  return nodemailer.createTransport(mg(auth));
+}
 
 // Initiate the database.
 // https://github.com/GoogleCloudPlatform/nodejs-docs-samples/blob/master/cloud-sql/mysql/mysql/server.js
@@ -121,7 +135,7 @@ const verifyRecaptcha = async (req, res) => {
 
   return await fetch(url, { method: 'post' })
     .then(response => {
-      console.log("ReCaptcha repsonse: " + JSON.stringify(response.json()))
+      console.log("ReCaptcha response: " + JSON.stringify(response.json()))
       return true;
     })
     .then(google_response => {
@@ -148,27 +162,18 @@ exports.contactForm = async (req, res) => {
   if (true == (await verifyRecaptcha(req, res))){ console.log("Verified Recaptcha."); }
 
   // Email the contact forward.
-  let mailTransporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: await email_address,
-      pass: await email_password
-    }
-  });
-
-  let mailDetails = {
+  let mailer = (await ensureMailgun())
+  mailer.sendMail({
     from: await email_address,
     to: await email_address,
     replyTo: req.body.email,
     subject: "NUH contact from " + req.body.fname + " " + req.body.lname,
     text: req.body.content,
-  };
-
-  mailTransporter.sendMail(mailDetails, function(err, data) {
-    if(err) {
-      console.error("[MAILTRANSPORT]: " + err)
+  }, function (err, info) {
+    if(err){
+      console.error("[MAILGUN]: " + err)
     } else {
-      console.log("Contact successful.")
+      console.log("Email successful: " + info)
     }
   });
 
