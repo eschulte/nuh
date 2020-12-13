@@ -26,10 +26,9 @@ const createUnixSocketPool = async config => {
 
   // Establish a connection to the database
   return await mysql.createPool({
-    user: process.env.DB_USER, // e.g. 'my-db-user'
-    password: process.env.DB_PASS, // e.g. 'my-db-password'
-    database: process.env.DB_NAME, // e.g. 'my-database'
-    // If connecting via unix domain socket, specify the path
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME,
     socketPath: `${dbSocketPath}/${process.env.CLOUD_SQL_CONNECTION_NAME}`,
   });
 };
@@ -79,7 +78,7 @@ CREATE TABLE IF NOT EXISTS contacts
       ( id serial NOT NULL,
         time timestamp DEFAULT CURRENT_TIMESTAMP NOT NULL,
         person_id bigint unsigned NOT NULL,
-        content string NOT NULL,
+        content text NOT NULL,
         PRIMARY KEY (id),
         FOREIGN KEY (person_id) REFERENCES people(id) );`
   );
@@ -93,14 +92,14 @@ const createPoolAndEnsureSchema = async () =>
       return pool;
     })
     .catch(err => {
-      logger.error(err);
+      console.error(err);
       throw err;
     });
 
 // Set up a variable to hold our connection pool. It would be safe to
 // initialize this right away, but we defer its instantiation to ease
 // testing different configurations.
-let pool = await createPoolAndEnsureSchema();
+let pool = createPoolAndEnsureSchema();
 
 // Exported functions.
 exports.contactForm = async (req, res) => {
@@ -133,7 +132,7 @@ exports.contactForm = async (req, res) => {
   });
 
   // Save the contact in the database.
-  pool = pool || (await createPoolAndEnsureSchema());
+  pool = await pool
   try {
     const stmt = 'REPLACE INTO people (first_name, last_name, email) VALUES (?, ?, ?)';
     // Pool.query automatically checks out, uses, and releases a connection
