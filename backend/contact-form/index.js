@@ -38,8 +38,8 @@ exports.contactForm = async (req, res) => {
 
     mailTransporter.sendMail(mailDetails, function(err, data) {
         if(err) {
-            console.log("ERROR: " + err)
-            return res.status(200).send("Error: " + err)
+            console.log("[mailTransporter]" + err)
+            return res.status(200).send("[mailTransporter] " + err)
         } else {
             console.log("Success.")
             return res.status(200).send("Success.")
@@ -50,9 +50,10 @@ exports.contactForm = async (req, res) => {
 // Simple function for testing Secret access.
 exports.helloSecret = async (req, res) => {
     res.set('Access-Control-Allow-Origin', '*');
+    console.log(await secret)
     res.status(200).send("HELLO SECRET: " + await secret);
 }
 
-// Testing
-var mocks = require('node-mocks-http');
-exports.contactForm({}, mocks.createResponse())
+// // Testing
+// var mocks = require('node-mocks-http');
+// exports.contactForm({}, mocks.createResponse())
