@@ -14,8 +14,10 @@ anchors:
     icon: fa-hands-helping
   - text: donate
     icon: fa-donate
+    link: /donate
   - text: contact
     icon: fa-envelope
+    link: /contact
 ---
 
 ## Mission
@@ -119,9 +121,10 @@ Partner organizations:
 - [Poor People's Campaign](https://www.poorpeoplescampaign.org)
 - Food Not Bombs
 
-## Donate
+## Get Involved
 
-<span style="color:red; font-style:bold;">TODO:</span> DONATE BUTTON
+- [Donate]({{ "/donate" | url }})
+- [Contact]({{ "/contact" | url }})
 
 <p>
 <center>
