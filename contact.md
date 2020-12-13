@@ -15,8 +15,8 @@ Contact
   <input type="text" id="last-name" id="last-name"><br>
   <label for="email">Email:</label><br>
   <input type="text" id="email" id="email"><br>
-  <label for="comment">Comment:</label><br>
-  <textarea name="comment"></textarea><br>
+  <label for="content">Content:</label><br>
+  <textarea name="content"></textarea><br>
   <button>Submit</button>
   <!-- <button class="g-recaptcha" -->
   <!--         data-sitekey="6LetGwQaAAAAAHWY2Wuv469KoCvz_Fn0pm868xfe" -->

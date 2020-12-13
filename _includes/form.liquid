@@ -31,9 +31,9 @@ document.forms['{{ form-id }}'].addEventListener('submit', (event) => {
         console.log(resp)
         return resp.text(); // or resp.json() or whatever the server sends
     }).then((body) => {
-        console.log("Server response: " + body)
+        console.log("SERVER: " + body)
     }).catch((error) => {
-        alert("Error: " + error)
+        alert("ERROR: " + error)
     });
 });
 </script>
