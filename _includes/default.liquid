@@ -43,15 +43,15 @@ h2 {
         <!-- TODO: For loop. -->
         {% for anchor in anchors %}
         {% if anchor.link %}
-        {% assign link = anchor.link | url %}
+        {% assign link = anchor.link %}
         {% else %}
         {% assign link = "#" | append: anchor.text %}
         {% endif %}
 
         {% if anchor.icon %}
-        <a href="{{ link }}" class="w3-bar-item w3-button"><i class="fas {{ anchor.icon }}"></i> {{ anchor.text | upper }}</a>
+        <a href="{{ link | url }}" class="w3-bar-item w3-button"><i class="fas {{ anchor.icon }}"></i> {{ anchor.text | upper }}</a>
         {% else %}
-        <a href="{{ link }}" class="w3-bar-item w3-button">{{ anchor.text | upper }}</a>
+        <a href="{{ link | url }}" class="w3-bar-item w3-button">{{ anchor.text | upper }}</a>
         {% endif %}
         {% endfor %}
       </div>
@@ -65,7 +65,13 @@ h2 {
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top w3-card" style="margin-top:46px">
     {% for anchor in anchors %}
-    <a href="#{{ anchor.text }}" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">{{ anchor.text | upper }}</a>
+    {% if anchor.link %}
+    {% assign link = anchor.link %}
+    {% else %}
+    {% assign link = "#" | append: anchor.text %}
+    {% endif %}
+
+    <a href="#{{ link | url }}" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">{{ anchor.text | upper }}</a>
     {% endfor %}
   </div>
 
