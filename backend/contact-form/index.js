@@ -113,24 +113,28 @@ let pool = createPoolAndEnsureSchema();
 const fetch = require('isomorphic-fetch');
 const verifyRecaptcha = async (req, res) => {
   const secret_key = (await recaptcha_secret_key);
-  console.log("REQ: "+JSON.stringify(req.body))
-  const token = req.body["g-recaptcha-response"];
+  console.log("FULL REQ: "+JSON.stringify(req))
+  const token = req["g-recaptcha-response"];
   const url = `https://www.google.com/recaptcha/api/siteverify?secret=${secret_key}&response=${token}`;
 
-  fetch(url, { method: 'post' })
-    .then(response => response.json())
+  return await fetch(url, { method: 'post' })
+    .then(response => {
+      console.log("ReCaptcha repsonse: " + JSON.stringify(response.json()))
+      return true;
+    })
     .then(google_response => {
       if (google_response.score < 0.5){
         console.log("Recaptcha score too low.")
         res.status(403).send("Recaptcha score too low.  I think you're a robot.")
+      } else {
+        return true;
       }
-    }
-         )
+    })
     .catch(error => {
       console.error("Recaptcha error: " + error)
       res.status(500).send("Recaptcha error.")
+      return false;
     });
-  return true;
 };
 
 // Exported functions.
