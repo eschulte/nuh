@@ -117,7 +117,7 @@ const createPoolAndEnsureSchema = async () =>
 // Set up a variable to hold our connection pool. It would be safe to
 // initialize this right away, but we defer its instantiation to ease
 // testing different configurations.
-// let pool = createPoolAndEnsureSchema();
+let pool = createPoolAndEnsureSchema();
 
 // Recaptcha verification.
 const fetch = require('isomorphic-fetch');
@@ -173,45 +173,45 @@ exports.contactForm = async (req, res) => {
   });
 
   // Save the contact in the database.
-//   pool = await pool
-//   try {
-//     const stmt = `INSERT IGNORE INTO people (first_name, last_name, email) VALUES (?, ?, ?);`;
-//     // Pool.query automatically checks out, uses, and releases a connection
-//     // back into the pool, ensuring it is always returned successfully.
-//     await pool.query(stmt, [req.body.fname, req.body.lname, req.body.email]);
-//   } catch (err) {
-//     // If something goes wrong, handle the error in this section. This might
-//     // involve retrying or adjusting parameters depending on the situation.
-//     // [START_EXCLUDE]
-//     console.error("[DATABASE]: " + err);
-//     return res
-//       .status(500)
-//       .send(
-//         'Unable to initiate contact! Please check the application logs for more details.'
-//       )
-//       .end();
-//   }
-//   console.log("Ensured "+req.body.email+" in people.")
+  pool = await pool
+  try {
+    const stmt = `INSERT IGNORE INTO people (first_name, last_name, email) VALUES (?, ?, ?);`;
+    // Pool.query automatically checks out, uses, and releases a connection
+    // back into the pool, ensuring it is always returned successfully.
+    await pool.query(stmt, [req.body.fname, req.body.lname, req.body.email]);
+  } catch (err) {
+    // If something goes wrong, handle the error in this section. This might
+    // involve retrying or adjusting parameters depending on the situation.
+    // [START_EXCLUDE]
+    console.error("[DATABASE]: " + err);
+    return res
+      .status(500)
+      .send(
+        'Unable to initiate contact! Please check the application logs for more details.'
+      )
+      .end();
+  }
+  console.log("Ensured "+req.body.email+" in people.")
 
-//   try {
-//     const stmt = `
-// INSERT INTO messages(content, person_id)
-// VALUES (?, (SELECT id FROM people WHERE email = ?));`
-//     // Pool.query automatically checks out, uses, and releases a connection
-//     // back into the pool, ensuring it is always returned successfully.
-//     await pool.query(stmt, [req.body.content, req.body.email]);
-//   } catch (err) {
-//     // If something goes wrong, handle the error in this section. This might
-//     // involve retrying or adjusting parameters depending on the situation.
-//     // [START_EXCLUDE]
-//     console.error("[DATABASE]: " + err);
-//     // return res
-//     //   .status(500)
-//     //   .send(
-//     //     'Unable to initiate contact! Please check the application logs for more details.'
-//     //   )
-//     //   .end();
-//   }
+  try {
+    const stmt = `
+INSERT INTO messages(content, person_id)
+VALUES (?, (SELECT id FROM people WHERE email = ?));`
+    // Pool.query automatically checks out, uses, and releases a connection
+    // back into the pool, ensuring it is always returned successfully.
+    await pool.query(stmt, [req.body.content, req.body.email]);
+  } catch (err) {
+    // If something goes wrong, handle the error in this section. This might
+    // involve retrying or adjusting parameters depending on the situation.
+    // [START_EXCLUDE]
+    console.error("[DATABASE]: " + err);
+    // return res
+    //   .status(500)
+    //   .send(
+    //     'Unable to initiate contact! Please check the application logs for more details.'
+    //   )
+    //   .end();
+  }
   console.log("Ensured "+req.body.email+" in people.")
   res.status(303).send(`Thank you.
 Your message has been received.
