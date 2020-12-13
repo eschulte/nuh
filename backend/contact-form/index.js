@@ -30,17 +30,11 @@ async function accessSecret(name) {
 ]
 
 // Initiate the mailer.
-const nodemailer = require('nodemailer');
-var mg = require('nodemailer-mailgun-transport');
-const ensureMailgun = async () => {
-  var auth = {
-    auth: {
-      api_key: (await mailgun_api_key),
-      domain: (await mailgun_domain)
-    }
-  }
-  return nodemailer.createTransport(mg(auth));
+const getMailgun = async () => {
+  return require('mailgun-js')({apiKey: "4879ff27-0ea06053",
+                                domain: "sandboxb9c676ef3aaa4c85bc13f9e3dd9325d8.mailgun.org"});
 }
+var mailgun = getMailgun()
 
 // Initiate the database.
 // https://github.com/GoogleCloudPlatform/nodejs-docs-samples/blob/master/cloud-sql/mysql/mysql/server.js
@@ -162,18 +156,20 @@ exports.contactForm = async (req, res) => {
   if (true == (await verifyRecaptcha(req, res))){ console.log("Verified Recaptcha."); }
 
   // Email the contact forward.
-  let mailer = (await ensureMailgun())
-  mailer.sendMail({
-    from: (await email_address),
-    to: (await email_address),
-    replyTo: req.body.email,
+  mailgun = await mailgun
+  data = {
+    from: "schulte.eric@gmail.com",
+    to: "schulte.eric@gmail.com",
+    // replyTo: req.body.email,
     subject: "NUH contact from " + req.body.fname + " " + req.body.lname,
     text: req.body.content,
-  }, function (err, info) {
+  }
+  console.log("Mail: " + util.inspect(data))
+  mailgun.messages().send(data, function (err, info) {
     if(err){
       console.error("[MAILGUN]: " + err)
     } else {
-      console.log("Email successful: " + info)
+      console.log(info)
     }
   });
 
