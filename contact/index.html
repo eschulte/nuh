@@ -15,44 +15,55 @@ body, html {height: 100%}
 /* To align anchors. */
 </style>
 <body class="w3-light-grey">
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="/" class="w3-bar-item w3-button w3-wide" onclick="navbar_hide()">NUH</a>
+    </div>
+  </div>
+  <div style="padding-top:2em;">
+  </div>
+
   <div class="w3-container">
     <h1></h1>
-    <h1 id="contact">Contact</h1>
+    <h1 id="contact-the-national-union-of-the-homeless">Contact the National Union of the Homeless</h1>
 <form id="contact-form" method="post" action="https://us-central1-winged-comfort-298422.cloudfunctions.net/contact-form">
-  <!-- <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response"> -->
-  <!-- <input type="hidden" name="action" value="validate_captcha"> -->
-  <label for="first-name">First Name:</label><br>
-  <input type="text" id="first-name" id="first-name"><br>
-  <label for="last-name">Last Name:</label><br>
-  <input type="text" id="last-name" id="last-name"><br>
+  <label for="fname">First Name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last Name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
   <label for="email">Email:</label><br>
-  <input type="text" id="email" id="email"><br>
-  <label for="comment">Comment:</label><br>
-  <textarea name="comment"></textarea><br>
-  <button>Submit</button>
-  <!-- <button class="g-recaptcha" -->
-  <!--         data-sitekey="6LetGwQaAAAAAHWY2Wuv469KoCvz_Fn0pm868xfe" -->
-  <!--         data-callback='onSubmit' -->
-  <!--         data-action='submit'>Submit</button> -->
+  <input type="text" id="email" name="email"><br>
+  <label for="content">Content:</label><br>
+  <textarea name="content" rows="10" cols="72"></textarea><br>
+  <!-- <button>Submit</button> -->
+  <button class="g-recaptcha"
+          data-sitekey="6LetGwQaAAAAAHWY2Wuv469KoCvz_Fn0pm868xfe"
+          data-callback='onSubmit'
+          data-action='submit'>Submit</button>
 </form>
 
   </div>
 </body>
 <script>
-document.forms['contact-form'].addEventListener('submit', (event) => {
+  function onSubmit(token){
+    document.getElementById("contact-form").submit();
+  }
+  document.forms['contact-form'].addEventListener('submit', (event) => {
     event.preventDefault();
-    // TODO do something here to show user that form is being submitted
+    // TODO: do something here to show user that form is being submitted
     fetch(event.target.action, {
-        method: 'POST',
-        body: new URLSearchParams(new FormData(event.target)) // event.target is the form
+      method: 'POST',
+      body: new URLSearchParams(new FormData(event.target))
     }).then((resp) => {
-        console.log(resp)
-        return resp.text(); // or resp.json() or whatever the server sends
+      console.log(resp)
+      return resp.text()
     }).then((body) => {
-        console.log("Server response: " + body)
+      console.log("SERVER: " + body)
+      return body
     }).catch((error) => {
-        alert("Error: " + error)
+      alert("ERROR: " + error)
     });
-});
+  });
 </script>
 </html>
