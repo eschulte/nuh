@@ -21,6 +21,7 @@ exports.contactForm = async (req, res) => {
   // res.set('Access-Control-Allow-Origin', 'nationalunionofthehomeless.org');
   res.set('Access-Control-Allow-Origin', '*');
 
+  // Email the contact forward.
   let mailTransporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -32,20 +33,22 @@ exports.contactForm = async (req, res) => {
   let mailDetails = {
     from: await email_address,
     to: await email_address,
-    reply-to: req.body.email
-    subject: 'Test mail',
-    text: req.body.content
+    replyTo: req.body.email,
+    subject: "NUH contact from " + req.body.fname + " " + req.body.lname,
+    text: req.body.content,
   };
 
   mailTransporter.sendMail(mailDetails, function(err, data) {
     if(err) {
-      console.log("[mailTransporter]" + err)
-      return res.status(200).send("[mailTransporter] " + err)
+      console.log("[mailTransporter]: " + err)
+      res.status(500).send("Failed to initiate contact!  See logs for details.");
     } else {
-      console.log("Success.")
-      return res.status(200).send("Success.")
+      console.log("Contact successful.")
+      res.status(200).send("Contact successful.");
     }
   });
+
+  
 };
 
 // Simple function for testing Secret access.
@@ -57,25 +60,20 @@ exports.helloSecret = async (req, res) => {
 }
 
 // Testing
-// var mocks = require('node-mocks-http');
+var mocks = require('node-mocks-http');
 
-// exports.helloSecret({}, mocks.createResponse())
-
-// var request = mocks.createRequest({
-//   method: 'POST',
-//   url: 'blargh',
-//   body: {
-//     "first-name" : "John",
-//     "last-name" : "Doe",
-//     "email" : "john.doe@gmail.com",
-//     "content" : "This is the body of my contact form.",
-//   }
-// })
-
-// var response = mocks.createResponse()
+var response = mocks.createResponse()
+var request = mocks.createRequest({
+  method: 'POST',
+  url: 'blargh',
+  body: {
+    fname : "John",
+    lname : "Doe",
+    email : "john.doe@gmail.com",
+    content : "This is the body of my contact form.",
+  }
+})
 
 // exports.helloSecret(request, response)
 
-// console.log(response)
-
-// exports.contactForm(request, response)
+exports.contactForm(request, response)
