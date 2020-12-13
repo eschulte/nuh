@@ -1,16 +1,15 @@
 // Import the Secret Manager client and instantiate it:
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const client = new SecretManagerServiceClient();
-const secret_name = "my-secret"
+const secret_name = "projects/winged-comfort-298422/secrets/my-secret/versions/latest"
 const project_id = "contact-form"
 async function accessSecret() {
   // Access the secret.
   const [accessResponse] = await client.accessSecretVersion({ name: secret_name });
   const responsePayload = accessResponse.payload.data.toString('utf8');
-  console.info(`Payload: ${responsePayload}`);
   return responsePayload;
 }
-const secret = accessSecret();
+const secret = accessSecret()
 
 // const nodemailer = require('nodemailer');
 // let mailTransporter = nodemailer.createTransport({
@@ -54,8 +53,8 @@ exports.helloSecret = (req, res) => {
     // let message = req.query.message || req.body.message || 'Hello NUH!';
     // res.status(200).send(message);
     res.set('Access-Control-Allow-Origin', '*');
-    return secret.then(
-        function (result){ return res.status(200).send("HELLO SECRET: " + secret); },
-        function (error){ return res.status(200).send("HELLO ERROR: " + error); },
+    secret.then(
+        function (result){ res.status(200).send("HELLO SECRET: " + result); },
+        function (error){ res.status(200).send("HELLO ERROR: " + error); },
     )
 }
