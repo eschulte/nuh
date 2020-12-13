@@ -1,34 +1,31 @@
 // Import the Secret Manager client and instantiate it:
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const client = new SecretManagerServiceClient();
-const secret_name = "projects/winged-comfort-298422/secrets/my-secret/versions/latest"
-const project_id = "contact-form"
-async function accessSecret() {
+async function accessSecret(name) {
   // Access the secret.
-  const [accessResponse] = await client.accessSecretVersion({ name: secret_name });
+  const [accessResponse] = await client.accessSecretVersion({
+      name: "projects/winged-comfort-298422/secrets/"+name+"/versions/latest"
+  });
   const responsePayload = accessResponse.payload.data.toString('utf8');
   return responsePayload;
 }
+[secret, email_address, email_password] = [
+    accessSecret("my-secret").then((result)=>{return result}),
+    accessSecret("email-address").then((result)=>{return result}),
+    accessSecret("email-password").then((result)=>{return result}),
+]
 
-// const nodemailer = require('nodemailer');
-// let mailTransporter = nodemailer.createTransport({
-//     service: 'gmail',
-//     auth: {
-//         user: process.env.USER,
-//         pass: process.env.PASS
-//     }
-// });
+const nodemailer = require('nodemailer');
+let mailTransporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: email_address,
+        pass: email_password
+    }
+});
 
-/**
- * Responds to any HTTP request.
- *
- * @param {!express:Request} req HTTP request context.
- * @param {!express:Response} res HTTP response context.
- */
 exports.contactForm = (req, res) => {
     // res.set('Access-Control-Allow-Origin', 'nationalunionofthehomeless.org');
-    // let message = req.query.message || req.body.message || 'Hello NUH!';
-    // res.status(200).send(message);
     res.set('Access-Control-Allow-Origin', '*');
 
     let mailDetails = {
@@ -47,11 +44,8 @@ exports.contactForm = (req, res) => {
     });
 };
 
+// Simple function for testing Secret access.
 exports.helloSecret = async (req, res) => {
-    // res.set('Access-Control-Allow-Origin', 'nationalunionofthehomeless.org');
-    // let message = req.query.message || req.body.message || 'Hello NUH!';
-    // res.status(200).send(message);
     res.set('Access-Control-Allow-Origin', '*');
-    const secret = await accessSecret();
-    res.status(200).send("HELLO SECRET: " + secret);
+    res.status(200).send("HELLO SECRET: " + await secret);
 }
