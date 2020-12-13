@@ -113,8 +113,8 @@ let pool = createPoolAndEnsureSchema();
 const fetch = require('isomorphic-fetch');
 const verifyRecaptcha = async (req, res) => {
   const secret_key = (await recaptcha_secret_key);
-  console.log("FULL REQ: "+JSON.stringify(req))
   const token = req["g-recaptcha-response"];
+  console.log("Recaptcha token: "+token)
   const url = `https://www.google.com/recaptcha/api/siteverify?secret=${secret_key}&response=${token}`;
 
   return await fetch(url, { method: 'post' })
@@ -139,13 +139,11 @@ const verifyRecaptcha = async (req, res) => {
 
 // Exported functions.
 exports.contactForm = async (req, res) => {
+  console.log("Request: "+JSON.stringify(req))
+
   // res.set('Access-Control-Allow-Origin', 'nationalunionofthehomeless.org');
   res.set('Access-Control-Allow-Origin', '*');
-
-  // Test the recaptcha.
-  if (true == (await verifyRecaptcha(req, res))){
-    console.log("Verified Recaptcha.")
-  }
+  if (true == (await verifyRecaptcha(req, res))){ console.log("Verified Recaptcha."); }
 
   // Email the contact forward.
   let mailTransporter = nodemailer.createTransport({
@@ -221,26 +219,28 @@ You may close this window.`);
 // Simple function for testing Secret access.
 exports.helloSecret = async (req, res) => {
   res.set('Access-Control-Allow-Origin', '*');
+  if (true == (await verifyRecaptcha(req, res))){ console.log("Verified Recaptcha."); }
+
   console.log(await secret)
   console.log(req)
   res.status(200).send("HELLO "+req.body.fname+" "+req.body.lname+" SECRET " + await secret);
 }
 
-// Testing
-var mocks = require('node-mocks-http');
-
-var response = mocks.createResponse()
-var request = mocks.createRequest({
-  method: 'POST',
-  url: 'blargh',
-  body: {
-    fname : "John",
-    lname : "Doe",
-    email : "john.doe@gmail.com",
-    content : "This is the body of my contact form.",
-  }
-})
-
-// exports.helloSecret(request, response)
-
-exports.contactForm(request, response)
+// // Testing
+// var mocks = require('node-mocks-http');
+//
+// var response = mocks.createResponse()
+// var request = mocks.createRequest({
+//   method: 'POST',
+//   url: 'blargh',
+//   body: {
+//     fname : "John",
+//     lname : "Doe",
+//     email : "john.doe@gmail.com",
+//     content : "This is the body of my contact form.",
+//   }
+// })
+//
+// // exports.helloSecret(request, response)
+//
+// exports.contactForm(request, response)
