@@ -21,20 +21,21 @@ body, html {height: 100%}
   </div>
 </body>
 <script>
-document.forms['{{ form-id }}'].addEventListener('submit', (event) => {
+  document.forms['{{ form-id }}'].addEventListener('submit', (event) => {
     event.preventDefault();
-    // TODO do something here to show user that form is being submitted
+    // TODO: do something here to show user that form is being submitted
     fetch(event.target.action, {
-        method: 'POST',
-        body: new URLSearchParams(new FormData(event.target)) // event.target is the form
+      method: 'POST',
+      body: new URLSearchParams(new FormData(event.target))
     }).then((resp) => {
-        console.log(resp)
-        return resp.text(); // or resp.json() or whatever the server sends
+      console.log(resp)
+      return resp.text()
     }).then((body) => {
-        console.log("SERVER: " + body)
+      console.log("SERVER: " + body)
+      return body
     }).catch((error) => {
-        alert("ERROR: " + error)
+      alert("ERROR: " + error)
     });
-});
+  });
 </script>
 </html>

@@ -178,8 +178,9 @@ VALUES (?, (SELECT id FROM people WHERE email = ?));`
     //   .end();
   }
   console.log("Ensured "+req.body.email+" in people.")
-
-  res.status(200).send("Contact successful.");
+  res.status(303).send(`Thank you.
+Your message has been received.
+You may close this window.`);
 };
 
 // Simple function for testing Secret access.

@@ -3,8 +3,8 @@ layout: form
 form-id: contact-form
 ---
 
-Contact
-=======
+Contact the National Union of the Homeless
+==========================================
 
 <form id="contact-form" method="post" action="https://us-central1-winged-comfort-298422.cloudfunctions.net/contact-form">
   <!-- <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response"> -->
@@ -16,7 +16,7 @@ Contact
   <label for="email">Email:</label><br>
   <input type="text" id="email" name="email"><br>
   <label for="content">Content:</label><br>
-  <textarea name="content"></textarea><br>
+  <textarea name="content" rows="10" cols="72"></textarea><br>
   <button>Submit</button>
   <!-- <button class="g-recaptcha" -->
   <!--         data-sitekey="6LetGwQaAAAAAHWY2Wuv469KoCvz_Fn0pm868xfe" -->
