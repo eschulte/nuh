@@ -9,7 +9,6 @@ async function accessSecret() {
   const responsePayload = accessResponse.payload.data.toString('utf8');
   return responsePayload;
 }
-const secret = accessSecret()
 
 // const nodemailer = require('nodemailer');
 // let mailTransporter = nodemailer.createTransport({
@@ -48,13 +47,11 @@ exports.contactForm = (req, res) => {
     });
 };
 
-exports.helloSecret = (req, res) => {
+exports.helloSecret = async (req, res) => {
     // res.set('Access-Control-Allow-Origin', 'nationalunionofthehomeless.org');
     // let message = req.query.message || req.body.message || 'Hello NUH!';
     // res.status(200).send(message);
     res.set('Access-Control-Allow-Origin', '*');
-    secret.then(
-        function (result){ res.status(200).send("HELLO SECRET: " + result); },
-        function (error){ res.status(200).send("HELLO ERROR: " + error); },
-    )
+    const secret = await accessSecret();
+    res.status(200).send("HELLO SECRET: " + secret);
 }
