@@ -32,11 +32,11 @@ The heart and soul of the National Union of the Homeless is to commit our lives 
 The National Union of the Homeless (NUH) originally formed in the late
 1980s and early 1990s in response to shifting economic conditions
 resulting in mass homelessness of families and former workers across
-our country. The formation of the shelter system that is a central
-part of the nonprofit industrial complex today formed at this time as
-well. From the shelters, encampments, and abandoned buildings folks
-came together to fight, speak out and organize against the very
-conditions that have made them homeless.
+our country. The shelter system that is a central part of the
+nonprofit industrial complex today formed at this time as well. From
+the shelters, encampments, and abandoned buildings folks came together
+to fight, speak out and organize against the very conditions that have
+made them homeless.
 
 At its height, the National Union of the Homeless (NUH) had 25 local
 chapters and 35,000 members in cities across the United States. Most
@@ -49,29 +49,31 @@ decline of the NUH, its history offers important lessons for building
 a movement to end poverty today, in the midst of continuing
 concentration of wealth among a few and expanding poverty for many.
 
-Although the NUH went into demise in the early 1990s, a number of its
+Although the NUH went into decline in the early 1990s, a number of its
 leaders continued organizing for social and economic human rights.
-The NUH’s mission and methods were carried on through other
-organizations, including the Kairos Center, Poor People’s Campaign: A
-National Call For Moral Revival, the University of the Poor, and many
-others.
+The NUH's mission and methods carried on through other organizations,
+including the [Kairos Center](https://kairoscenter.org), [Poor
+People's Campaign: A National Call For Moral
+Revival](https://www.poorpeoplescampaign.org), the [University of the
+Poor](https://www.poorpeoplescampaign.org), and many others.
 
 ### Today
 
-Today such organizations are also part of the legacy of the NUH. The
+Today multiple organizations continue the legacy of the NUH. The
 Kairos Center focuses on leadership development, technical assistance,
 and skills training for organizers from grassroots organizations
-nationwide working on issues of economic justice.  The Homeless Union
-History Project is part of the leadership development process of the
-University of the Poor. This project documents the history of the
-Homeless Union, conducts research, and develops curriculum for
-political education.  Its research methodology and curriculum
-production is informed by the political education and organizational
-development needs of the movement to end poverty’s growing network of
-anti-poverty organizations.  The purpose of this process is to develop
-leaders with a collective understanding and analysis of this history
-for the purpose of building a powerful broad-based social movement to
-end poverty led by the poor as a united and organized social force.
+nationwide working on issues of economic justice.  The [Homeless Union
+History Project](http://homelessunion.wikidot.com) is part of the
+leadership development process of the University of the Poor. This
+project documents the history of the Homeless Union, conducts
+research, and develops curriculum for political education.  Its
+research methodology and curriculum production is informed by the
+political education and organizational development needs of the
+movement to end poverty's growing network of anti-poverty
+organizations.  The purpose of this process is to develop leaders with
+a collective understanding and analysis of this history for the
+purpose of building a powerful broad-based social movement to end
+poverty led by the poor as a united and organized social force.
 
 ### The Re-establishment of the National Union of the Homeless 
 
@@ -81,13 +83,13 @@ end poverty led by the poor as a united and organized social force.
 </figure>
 
 In June 2019 organizers from across the country gathered in Washington
-DC at the Poor People’s Campaign: A National Call For Moral Revival’s
+DC at the Poor People's Campaign: A National Call For Moral Revival's
 Moral Congress. At this gathering a group of close to 100 organizers
 voted to form the Committee to Reestablish the NUH.
 
 In 2020 the National Union of the Homeless was reborn. The revitalized
 NUH has established multiple locals throughout 11 states, we held our
-first Officer’s Trainer School Fall 2019 and we continue to grow
+first Officer's Trainer School Fall 2019 and we continue to grow
 throughout the country as we uphold the slogans, legacy and practices
 of the original NUH; such as "You Only Get What You Are Organized To
 Take!," "Homeless Not Helpless!," and "Housing Now Not Death On The
@@ -101,7 +103,7 @@ think for ourselves, and organize together to lead not just ourselves
 but the nation in changing the very system that continues to create
 homelessness every day in this country
 
-<figure class="w3-center">
+<figure class="w3-center" style="clear:both;">
   <img class="w3-round" style="max-width:100%; height:auto;" src='{{"/img/nuh-ots-crop-half.jpg" | url }}'>
   <figcaption>2019 Officer Training School</figcaption>
 </figure>
