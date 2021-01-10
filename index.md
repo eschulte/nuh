@@ -117,30 +117,41 @@ homelessness every day in this country
 Events are listed on the [National Union of the Homeless Facebook
 page](https://www.facebook.com/pg/NationalUnionoftheHomeless/events).
 
-<!-- {% assign row = 0 %} -->
-<!-- {% for event in collections.event %} -->
+{% assign row = 0 %}
+{% assign sorted = collections.event | reverse %}
+{% for event in sorted %}
 
-<!-- {% if row == 0 %} -->
-<!-- <div class="w3-row-padding"> -->
-<!-- {% endif %} -->
+{% if row == 0 %}
+<div class="w3-row-padding">
+{% endif %}
 
-<!-- <div class="w3-half w3-margin-bottom"> -->
-<!-- <div class="w3-container w3-card"> -->
-<!-- <h3>{{ event.data.title }}</h3> -->
+<div class="w3-half w3-margin-bottom">
+<div class="w3-container w3-card">
 
-<!-- {{ event.date  | date: "%m/%d/%Y" }} -->
+{% if event.data.link %}
+### [{{ event.data.title }}]({{ event.data.link }})
+{% else %}
+### [{{ event.data.title }}]({{ event.url|url }})
+{% endif %}
 
-<!-- {{ event.data.brief }} [More information...]({{ event.url }}) -->
-<!-- </div> -->
-<!-- </div> -->
 
-<!-- {% if row == 1 %} -->
-<!-- </div> -->
-<!-- {% assign row = 0 %} -->
-<!-- {% endif %} -->
+{{ event.date  | date: "%m/%d/%Y" }}
 
-<!-- {% assign row = row | plus: 1 %} -->
-<!-- {% endfor %} -->
+{% if event.data.link %}
+[{{ event.data.link-name }}]({{ event.data.link }})
+{% else %}
+{{ event.data.brief }} [More information...]({{ event.url }})
+{% endif %}
+</div>
+</div>
+
+{% if row == 1 %}
+</div>
+{% assign row = 0 %}
+{% endif %}
+
+{% assign row = row | plus: 1 %}
+{% endfor %}
 
 ## Locals
 
