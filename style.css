@@ -6,6 +6,10 @@ h2 {
     padding-top: 1.5em;
     clear: both;
 }
+h1,h2,h3 a {
+    text-decoration: none;
+}
+
 .construction {
     background: #ff726f;
     margin: 1em;
