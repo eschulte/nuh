@@ -109,7 +109,7 @@ homelessness every day in this country
 </figure>
 
 <figure class="w3-center">
-  <img class="w3-round" style="max-width:100%; height:auto;" src='{{"/img/moral-congress-meeting.png" | url }}'>
+  <img class="w3-round" style="max-width:100%; height:auto;" src='{{"/img/moral-congress-meeting.jpg" | url }}'>
   <figcaption>2019 Moral Congress Meeting to Reestablish</figcaption>
 </figure>
 
