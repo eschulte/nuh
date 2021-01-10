@@ -14,5 +14,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("favicon.ico");
 
+  eleventyConfig.addLiquidFilter("fixDate", function(value){
+    value.setTime(value.getTime() + (5*60*60*1000));
+    return value; })
+
   return config;
 };

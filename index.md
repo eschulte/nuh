@@ -114,8 +114,8 @@ homelessness every day in this country
 
 ## Events
 
-Events are listed on the [National Union of the Homeless Facebook
-page](https://www.facebook.com/pg/NationalUnionoftheHomeless/events).
+- Events are listed on the [National Union of the Homeless Facebook page](https://www.facebook.com/pg/NationalUnionoftheHomeless/events).
+- Videos of past events are listed on the [National Union of the Homeless YouTube channel](https://www.youtube.com/channel/UCCg1sQ5ALv-Z3bLMsajHCkA?app=desktop).
 
 {% assign row = 0 %}
 {% assign sorted = collections.event | reverse %}
@@ -134,13 +134,14 @@ page](https://www.facebook.com/pg/NationalUnionoftheHomeless/events).
 ### [{{ event.data.title }}]({{ event.url | url }})
 {% endif %}
 
+{{ event.date | fixDate | date: "%B %e, %Y" }}
 
-{{ event.date  | date: "%m/%d/%Y" }}
+{{ event.data.brief }}
 
 {% if event.data.link %}
 [{{ event.data.link-name }}]({{ event.data.link }})
 {% else %}
-{{ event.data.brief }} [More information...]({{ event.url | url }})
+[More information...]({{ event.url | url }})
 {% endif %}
 </div>
 </div>

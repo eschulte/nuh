@@ -2,7 +2,9 @@
 layout: event
 tags: event
 date: 2020-12-21
-title: Annual Homeless Memorial Virtual Gathering
+title: Annual National Homeless Memorial Day
+brief: |
+    As part of the NUH's Winter Offensive we will hold our Annual National Homeless Memorial Day and Condemnation of Mass graves of unnamed poor and homeless men, women, and children in Potters’ fields around the countries and internationally 
 link-name: Event video
-link: https://www.facebook.com/NationalUnionoftheHomeless/videos/2780652628851254/
+link: https://www.youtube.com/watch?v=VOVunFycvK4
 ---
