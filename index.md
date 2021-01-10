@@ -131,7 +131,7 @@ page](https://www.facebook.com/pg/NationalUnionoftheHomeless/events).
 {% if event.data.link %}
 ### [{{ event.data.title }}]({{ event.data.link }})
 {% else %}
-### [{{ event.data.title }}]({{ event.url|url }})
+### [{{ event.data.title }}]({{ event.url | url }})
 {% endif %}
 
 
@@ -140,7 +140,7 @@ page](https://www.facebook.com/pg/NationalUnionoftheHomeless/events).
 {% if event.data.link %}
 [{{ event.data.link-name }}]({{ event.data.link }})
 {% else %}
-{{ event.data.brief }} [More information...]({{ event.url }})
+{{ event.data.brief }} [More information...]({{ event.url | url }})
 {% endif %}
 </div>
 </div>
