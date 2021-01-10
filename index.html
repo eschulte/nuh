@@ -17,6 +17,14 @@
           padding-top: 1.5em;
           clear: both;
       }
+      .construction {
+          background: #ff726f;
+          margin: 1em;
+          padding: 1em;
+      }
+      .construction i {
+          margin: 1em;
+      }
     </style>
   </head>
 <body class="w3-light-grey">
@@ -57,6 +65,14 @@
         
 
         
+        <a href="#history" class="w3-bar-item w3-button"><i class="fas fa-user"></i> HISTORY</a>
+        
+        
+        
+        
+        
+
+        
         <a href="#events" class="w3-bar-item w3-button"><i class="fas fa-bullhorn"></i> EVENTS</a>
         
         
@@ -66,14 +82,6 @@
 
         
         <a href="#locals" class="w3-bar-item w3-button"><i class="fas fa-hands-helping"></i> LOCALS</a>
-        
-        
-        
-        
-        
-
-        
-        <a href="#history" class="w3-bar-item w3-button"><i class="fas fa-user"></i> HISTORY</a>
         
         
         
@@ -113,6 +121,12 @@
     
     
 
+    <a href="##history" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">HISTORY</a>
+    
+    
+    
+    
+
     <a href="##events" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">EVENTS</a>
     
     
@@ -120,12 +134,6 @@
     
 
     <a href="##locals" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">LOCALS</a>
-    
-    
-    
-    
-
-    <a href="##history" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">HISTORY</a>
     
     
     
@@ -145,36 +153,6 @@
     <h2 id="mission">Mission</h2>
 <img class="w3-right w3-round w3-half" src='/nuh/img/ron-casanova.jpg'>
 <p>The heart and soul of the National Union of the Homeless is to commit our lives to ending homelessness and poverty and to work tirelessly for the human right to life, liberty, and the pursuit of happiness, for social and economic justice for all. We dedicate ourselves to raising the awareness of our sisters and brothers, to planning a sustained struggle and to building an organization that can obtain freedom through revolutionary perseverance. We pledge to deepen our personal commitment to end all forms of exploitation, racism, sexism, and abuse. True solidarity demands that we create not only the new society, but also the new human being.</p>
-<h2 id="events">Events</h2>
-<p>Introduction to events.  Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed pede.  Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing interdum, lacus tellus malesuada massa, quis varius mi purus non odio.  Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.  Curabitur vulputate vestibulum lorem.  Fusce sagittis, libero non molestie mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia eros.  Sed id ligula quis est convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam a sapien.</p>
-<div class="w3-row-padding">
-<div class="w3-half w3-margin-bottom">
-<div class="w3-container w3-card">
-<h3>An event</h3>
-<p>12/09/2020</p>
-<p>A brief summary of this first event. <a href="/events/one/">More information...</a></p>
-</div>
-</div>
-<div class="w3-half w3-margin-bottom">
-<div class="w3-container w3-card">
-<h3>Another event</h3>
-<p>12/12/2020</p>
-<p>Another brief summary for the second event this time. <a href="/events/two/">More information...</a></p>
-</div>
-</div>
-<h2 id="locals">Locals</h2>
-<p>Instructions on how to start a local.  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl.</p>
-<div class="w3-container">
-<table class="w3-table w3-bordered w3-table-all">
-<colgroup>
-<col style="width:33%;">
-<col style="width:66%;">
-</colgroup>
-<tr class="w3-bordered"><th>Location</th><th>Name</th></tr>
-<tr class="w3-bordered"><td>Somewhere</td><td><a href="/locals/first/">Foo</a></td></tr>
-<tr class="w3-bordered"><td>Over there</td><td><a href="/locals/second/">Bar</a></td></tr>
-</table>
-</div>
 <h2 id="history">History</h2>
 <img class="w3-right w3-round w3-half" src='/nuh/img/getting-into-step.jpg'>
 <p>The National Union of the Homeless (NUH) originally formed in the late
@@ -203,6 +181,41 @@ think for ourselves, and organize together to lead not just ourselves
 but the nation in changing the very system that continues to create
 homelessness every day in this country.</p>
 <img class="w3-round w3-col" src='/nuh/img/reestablish-poster.jpg'>
+<h2 id="events">Events</h2>
+<p>Introduction to events.  Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed pede.  Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing interdum, lacus tellus malesuada massa, quis varius mi purus non odio.  Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.  Curabitur vulputate vestibulum lorem.  Fusce sagittis, libero non molestie mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia eros.  Sed id ligula quis est convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam a sapien.</p>
+<div class="w3-row-padding">
+<div class="w3-half w3-margin-bottom">
+<div class="w3-container w3-card">
+<h3>An event</h3>
+<p>12/09/2020</p>
+<p>A brief summary of this first event. <a href="/events/one/">More information...</a></p>
+</div>
+</div>
+<div class="w3-half w3-margin-bottom">
+<div class="w3-container w3-card">
+<h3>Another event</h3>
+<p>12/12/2020</p>
+<p>Another brief summary for the second event this time. <a href="/events/two/">More information...</a></p>
+</div>
+</div>
+<h2 id="locals">Locals</h2>
+<span class="construction">
+<i class="fas fa-wrench"></i> Under Construction <i class="fas fa-wrench"></i>
+</span>
+<!-- <div class="w3-container"> -->
+<!-- <table class="w3-table w3-bordered w3-table-all"> -->
+<!-- <colgroup> -->
+<!-- <col style="width:33%;"> -->
+<!-- <col style="width:66%;"> -->
+<!-- </colgroup> -->
+<!-- <tr class="w3-bordered"><th>Location</th><th>Name</th></tr> -->
+<!--  -->
+<!-- <tr class="w3-bordered"><td>Somewhere</td><td><a href="/locals/first/">Foo</a></td></tr> -->
+<!--  -->
+<!-- <tr class="w3-bordered"><td>Over there</td><td><a href="/locals/second/">Bar</a></td></tr> -->
+<!--  -->
+<!-- </table> -->
+<!-- </div> -->
 <h2 id="get-involved">Get Involved</h2>
 <ul>
 <li><a href="/nuh/donate">Donate</a></li>
