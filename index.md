@@ -24,14 +24,7 @@ anchors:
 
 <img class="w3-right w3-round w3-half" src='{{ "/img/ron-casanova.jpg" | url }}'>
 
-Mission statement.  Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.
-
-* Praesent augue.
-* Pellentesque tristique imperdiet tortor.
-* Mauris ac felis vel velit tristique imperdiet.
-* Nullam tristique diam non turpis.
-* Nunc porta vulputate tellus.
-* Phasellus neque orci, porta a, aliquet quis, semper a, massa.
+The heart and soul of the National Union of the Homeless is to commit our lives to ending homelessness and poverty and to work tirelessly for the human right to life, liberty, and the pursuit of happiness, for social and economic justice for all. We dedicate ourselves to raising the awareness of our sisters and brothers, to planning a sustained struggle and to building an organization that can obtain freedom through revolutionary perseverance. We pledge to deepen our personal commitment to end all forms of exploitation, racism, sexism, and abuse. True solidarity demands that we create not only the new society, but also the new human being.
 
 ## Events
 
