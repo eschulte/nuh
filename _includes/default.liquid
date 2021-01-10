@@ -26,26 +26,38 @@
           margin: 1em;
       }
       .logo {
-          margin-left: 1em;
-          background-image: url("{{ "/img/NUH_logo_Idea.jpeg" | url }}");
-          background-position: left;
-          background-repeat: no-repeat;
-          background-size: 2em;
+           width: 12em;
+           margin: 0.25em;
+           float: left;
+      }
+      .title {
+          padding-left: 1em;
+          display: inline;
+      }
+      .vertical-container {
+          position: relative;
+          height: 7em;
+      }
+      .vertical-center {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
       }
     </style>
   </head>
 <body class="w3-light-grey">
 
   <!-- Header / Home-->
-  <header class="w3-display-container w3-wide w3-grayscale-min" id="home">
-    <div class="w3-text-dark-gray w3-center" style="padding-top: 2em;">
-      <!-- Large and medium screens -->
+  <header class="w3-display-container w3-wide w3-grayscale-min" style="padding-top: 3em;" id="home">
+    <div class="vertical-container">
+      <img alt="NUH Logo" class="logo" src="{{ "/img/NUH_logo_Idea.jpeg" | url }}">
       <div class="w3-hide-small">
-        <h1 class="w3-jumbo logo">{{ title }}</h1>
+        <h1 class="w3-huge w3-text-dark-gray title vertical-center">{{ title }}</h1>
       </div>
-      <!-- Small screens -->
       <div class="w3-hide-large w3-hide-medium">
-        <h1 class="w3-huge">{{ title }}</h1>
+        <h1 class="w3-large w3-text-dark-gray title vertical-center">{{ title }}</h1>
       </div>
     </div>
   </header>
@@ -102,7 +114,7 @@
       var x = document.getElementById("navDemo");
       if (x.className.indexOf("w3-show") == -1) {
           x.className += " w3-show";
-      } else { 
+      } else {
           x.className = x.className.replace(" w3-show", "");
       }
   }
