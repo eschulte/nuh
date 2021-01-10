@@ -2,16 +2,15 @@
 layout: default
 title: National Union of the Homeless
 # All icons are from https://fontawesome.com/icons?d=gallery
+# fa-fist-raised
 anchors:
   - text: mission
   - text: events
     icon: fa-bullhorn # consider: fa-calendar, fa-bullhorn, fa-th (grid)
   - text: locals
-    icon: fa-fist-raised
+    icon: fa-hands-helping
   - text: history
     icon: fa-user # consider fa-landmark
-  - text: solidarity
-    icon: fa-hands-helping
   - text: donate
     icon: fa-donate
     link: /donate
@@ -107,17 +106,14 @@ homelessness every day in this country.
 
 <img class="w3-round w3-col" src='{{"/img/reestablish-poster.jpg" | url }}'>
 
-## Solidarity
-
-Partner organizations:
-- [University of the Poor](https://universityofthepoor.org/)
-- [Poor People's Campaign](https://www.poorpeoplescampaign.org)
-- Food Not Bombs
-
 ## Get Involved
 
 - [Donate]({{ "/donate" | url }})
 - [Contact]({{ "/contact" | url }})
+- Partner organizations:
+    - [University of the Poor](https://universityofthepoor.org/)
+    - [Poor People's Campaign](https://www.poorpeoplescampaign.org)
+    - Food Not Bombs
 
 <p>
 <center>
