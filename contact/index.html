@@ -1,70 +1,69 @@
 <!DOCTYPE html>
 <html>
-<title></title>
-<meta charset="UTF-8">
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Design by Eric Schulte, source at https://github.com/eschulte/nuh. -->
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.0/css/all.css">
-<link rel="icon" href="/nuh/favicon.ico">
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<style>
-body,h1,h2{font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-/* To align anchors. */
-</style>
-<body class="w3-light-grey">
-  <!-- Navbar (sit on top) -->
-  <div class="w3-top">
-    <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a href="/nuh/" class="w3-bar-item w3-button w3-wide" onclick="navbar_hide()">NUH</a>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Design by Eric Schulte, source at https://github.com/eschulte/nuh. -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.0/css/all.css">
+  <link rel="stylesheet" href="/nuh/style.css">
+  <link rel="icon" href="/nuh/favicon.ico">
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <body class="w3-light-grey">
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="/nuh/" class="w3-bar-item w3-button w3-wide" onclick="navbar_hide()"><i class="nuh-icon"></i> NUH</a>
+      </div>
     </div>
-  </div>
-  <div style="padding-top:2em;">
-  </div>
+    <div style="padding-top:2em;">
+    </div>
 
-  <div class="w3-container">
-    <h1></h1>
-    <h1 id="contact-the-national-union-of-the-homeless">Contact the National Union of the Homeless</h1>
+    <div class="w3-container">
+      <h1></h1>
+      <h1 id="contact-the-national-union-of-the-homeless">Contact the National Union of the Homeless</h1>
+<span class="construction">
+<i class="fas fa-wrench"></i> Under Construction <i class="fas fa-wrench"></i>
+</span>
 <form id="contact-form" method="post" action="https://us-central1-winged-comfort-298422.cloudfunctions.net/contact-form">
   <label for="fname">First Name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
+  <input type="text" id="fname" name="fname" disabled><br>
   <label for="lname">Last Name:</label><br>
-  <input type="text" id="lname" name="lname"><br>
+  <input type="text" id="lname" name="lname" disabled><br>
   <label for="email">Email:</label><br>
-  <input type="text" id="email" name="email"><br>
+  <input type="text" id="email" name="email" disabled><br>
   <label for="content">Content:</label><br>
-  <textarea name="content" rows="10" cols="72"></textarea><br>
+  <textarea name="content" rows="10" cols="72" disabled></textarea><br>
   <!-- <button>Submit</button> -->
   <button class="g-recaptcha"
           data-sitekey="6LetGwQaAAAAAHWY2Wuv469KoCvz_Fn0pm868xfe"
           data-callback='onSubmit'
-          data-action='submit'>Submit</button>
+          data-action='submit' disabled>Submit</button>
 </form>
 
-  </div>
-</body>
-<script>
-  function onSubmit(token){
-    document.getElementById("contact-form").submit();
-  }
-  document.forms['contact-form'].addEventListener('submit', (event) => {
-    event.preventDefault();
-    // TODO: do something here to show user that form is being submitted
-    fetch(event.target.action, {
-      method: 'POST',
-      body: new URLSearchParams(new FormData(event.target))
-    }).then((resp) => {
-      console.log(resp)
-      return resp.text()
-    }).then((body) => {
-      console.log("SERVER: " + body)
-      return body
-    }).catch((error) => {
-      alert("ERROR: " + error)
+    </div>
+  </body>
+  <script>
+    function onSubmit(token){
+      document.getElementById("contact-form").submit();
+    }
+    document.forms['contact-form'].addEventListener('submit', (event) => {
+      event.preventDefault();
+      // TODO: do something here to show user that form is being submitted
+      fetch(event.target.action, {
+        method: 'POST',
+        body: new URLSearchParams(new FormData(event.target))
+      }).then((resp) => {
+        console.log(resp)
+        return resp.text()
+      }).then((body) => {
+        console.log("SERVER: " + body)
+        return body
+      }).catch((error) => {
+        alert("ERROR: " + error)
+      });
     });
-  });
-</script>
+  </script>
 </html>
