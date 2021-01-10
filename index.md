@@ -25,9 +25,9 @@ anchors:
 
 The heart and soul of the National Union of the Homeless is to commit our lives to ending homelessness and poverty and to work tirelessly for the human right to life, liberty, and the pursuit of happiness, for social and economic justice for all. We dedicate ourselves to raising the awareness of our sisters and brothers, to planning a sustained struggle and to building an organization that can obtain freedom through revolutionary perseverance. We pledge to deepen our personal commitment to end all forms of exploitation, racism, sexism, and abuse. True solidarity demands that we create not only the new society, but also the new human being.
 
-## History
+## History (Who We Are)
 
-<img class="w3-right w3-round w3-half" src='{{"/img/getting-into-step.jpg" | url }}'>
+<img class="w3-right w3-round w3-third" src='{{"/img/getting-into-step.jpg" | url }}'>
 
 The National Union of the Homeless (NUH) originally formed in the late
 1980s and early 1990s in response to shifting economic conditions
@@ -38,17 +38,60 @@ well. From the shelters, encampments, and abandoned buildings folks
 came together to fight, speak out and organize against the very
 conditions that have made them homeless.
 
+At its height, the National Union of the Homeless (NUH) had 25 local
+chapters and 35,000 members in cities across the United States. Most
+importantly, it implemented a model of organizing involving the poor
+and homeless thinking for themselves, speaking for themselves,
+fighting for themselves and producing from their ranks capable and
+creative leaders. This was contrary to the prevailing stereotypes and
+misconceptions about homelessness. Almost twenty years after the
+decline of the NUH, its history offers important lessons for building
+a movement to end poverty today, in the midst of continuing
+concentration of wealth among a few and expanding poverty for many.
+
+Although the NUH went into demise in the early 1990s, a number of its
+leaders continued organizing for social and economic human rights.
+The NUH’s mission and methods were carried on through other
+organizations, including the Kairos Center, Poor People’s Campaign: A
+National Call For Moral Revival, the University of the Poor, and many
+others.
+
+### Today
+
+Today such organizations are also part of the legacy of the NUH. The
+Kairos Center focuses on leadership development, technical assistance,
+and skills training for organizers from grassroots organizations
+nationwide working on issues of economic justice.  The Homeless Union
+History Project is part of the leadership development process of the
+University of the Poor. This project documents the history of the
+Homeless Union, conducts research, and develops curriculum for
+political education.  Its research methodology and curriculum
+production is informed by the political education and organizational
+development needs of the movement to end poverty’s growing network of
+anti-poverty organizations.  The purpose of this process is to develop
+leaders with a collective understanding and analysis of this history
+for the purpose of building a powerful broad-based social movement to
+end poverty led by the poor as a united and organized social force.
+
+### The Re-establishment of the National Union of the Homeless 
+
+<figure class="w3-right">
+  <img class="w3-round" style="max-width:100%; height:auto;" src='{{"/img/reestablish-poster-third.jpg" | url }}'>
+  <figcaption>Signed Poster from 2019 Meeting to Reestablish</figcaption>
+</figure>
+
 In June 2019 organizers from across the country gathered in Washington
 DC at the Poor People’s Campaign: A National Call For Moral Revival’s
-Moral Congress. At this gathering we voted to form the Committee to
-Reestablish the NUH.
+Moral Congress. At this gathering a group of close to 100 organizers
+voted to form the Committee to Reestablish the NUH.
 
-Today the revitalized NUH has established multiple locals throughout
-11 states, we held our first Officer’s Trainer School Fall 2019 and we
-continue to grow throughout the country as we uphold the slogans,
-legacy and practices of the original NUH; such as "You Only Get What
-You Are Organized To Take!," "Homeless Not Helpless!," and "Housing Now
-Not Death On The Streets!"
+In 2020 the National Union of the Homeless was reborn. The revitalized
+NUH has established multiple locals throughout 11 states, we held our
+first Officer’s Trainer School Fall 2019 and we continue to grow
+throughout the country as we uphold the slogans, legacy and practices
+of the original NUH; such as "You Only Get What You Are Organized To
+Take!," "Homeless Not Helpless!," and "Housing Now Not Death On The
+Streets!"
 
 The NUH then and now is made up of members currently and formerly
 experiencing homelessness as well as organizers understanding this is
@@ -56,9 +99,17 @@ a fight for the survival of all the poor and dispossessed in our
 nation. The power the NUH is proof that we can speak for ourselves,
 think for ourselves, and organize together to lead not just ourselves
 but the nation in changing the very system that continues to create
-homelessness every day in this country.
+homelessness every day in this country
 
-<img class="w3-round w3-col" src='{{"/img/reestablish-poster.jpg" | url }}'>
+<figure class="w3-center">
+  <img class="w3-round" style="max-width:100%; height:auto;" src='{{"/img/nuh-ots-crop-half.jpg" | url }}'>
+  <figcaption>2019 Officer Training School</figcaption>
+</figure>
+
+<figure class="w3-center">
+  <img class="w3-round" style="max-width:100%; height:auto;" src='{{"/img/moral-congress-meeting.png" | url }}'>
+  <figcaption>2019 Moral Congress Meeting to Reestablish</figcaption>
+</figure>
 
 ## Events
 
@@ -124,6 +175,5 @@ For more information and to get involved contact:
 </center>
 </p>
 
-<div class="w3-container">
-  <img class="w3-round w3-col" src='{{"/img/only-get-what-organized-to-take.jpg" | url }}'>
-</div>
+<!-- <img class="w3-round w3-col" src='{{"/img/only-get-what-organized-to-take.jpg" | url }}'> -->
+<!-- <img class="w3-round w3-col" src='{{"/img/reestablish-poster.jpg" | url }}'> -->
