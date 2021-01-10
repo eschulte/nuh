@@ -25,6 +25,13 @@
       .construction i {
           margin: 1em;
       }
+      .logo {
+          margin-left: 1em;
+          background-image: url("{{ "/img/NUH_logo_Idea.jpeg" | url }}");
+          background-position: left;
+          background-repeat: no-repeat;
+          background-size: 2em;
+      }
     </style>
   </head>
 <body class="w3-light-grey">
@@ -34,8 +41,7 @@
     <div class="w3-text-dark-gray w3-center" style="padding-top: 2em;">
       <!-- Large and medium screens -->
       <div class="w3-hide-small">
-        <h1 class="w3-jumbo">{{ title }}</h1>
-        <img alt="YOU ONLY GET WHAT YOU'RE ORGANIZED TO TAKE" src="{{ "/img/nuh-ots-crop.jpg" | url }}">
+        <h1 class="w3-jumbo logo">{{ title }}</h1>
       </div>
       <!-- Small screens -->
       <div class="w3-hide-large w3-hide-medium">
