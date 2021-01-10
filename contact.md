@@ -20,8 +20,8 @@ Contact the National Union of the Homeless
   <label for="content">Content:</label><br>
   <textarea name="content" rows="10" cols="72" disabled></textarea><br>
   <!-- <button>Submit</button> -->
-  <button class="g-recaptcha"
-          data-sitekey="6LetGwQaAAAAAHWY2Wuv469KoCvz_Fn0pm868xfe"
-          data-callback='onSubmit'
-          data-action='submit' disabled>Submit</button>
+  <!-- <button class="g-recaptcha" -->
+  <!--         data-sitekey="6LetGwQaAAAAAHWY2Wuv469KoCvz_Fn0pm868xfe" -->
+  <!--         data-callback='onSubmit' -->
+  <!--         data-action='submit'>Submit</button> -->
 </form>
