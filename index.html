@@ -25,21 +25,39 @@
       .construction i {
           margin: 1em;
       }
+      .logo {
+           width: 12em;
+           margin: 0.25em;
+           float: left;
+      }
+      .title {
+          padding-left: 1em;
+          display: inline;
+      }
+      .vertical-container {
+          position: relative;
+          height: 7em;
+      }
+      .vertical-center {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+      }
     </style>
   </head>
 <body class="w3-light-grey">
 
   <!-- Header / Home-->
-  <header class="w3-display-container w3-wide w3-grayscale-min" id="home">
-    <div class="w3-text-dark-gray w3-center" style="padding-top: 2em;">
-      <!-- Large and medium screens -->
+  <header class="w3-display-container w3-wide w3-grayscale-min" style="padding-top: 3em;" id="home">
+    <div class="vertical-container">
+      <img alt="NUH Logo" class="logo" src="/nuh/img/NUH_logo_Idea.jpeg">
       <div class="w3-hide-small">
-        <h1 class="w3-jumbo">National Union of the Homeless</h1>
-        <img alt="YOU ONLY GET WHAT YOU'RE ORGANIZED TO TAKE" src="/nuh/img/nuh-ots-crop.jpg">
+        <h1 class="w3-huge w3-text-dark-gray title vertical-center">National Union of the Homeless</h1>
       </div>
-      <!-- Small screens -->
       <div class="w3-hide-large w3-hide-medium">
-        <h1 class="w3-huge">National Union of the Homeless</h1>
+        <h1 class="w3-large w3-text-dark-gray title vertical-center">National Union of the Homeless</h1>
       </div>
     </div>
   </header>
@@ -247,7 +265,7 @@ For more information and to get involved contact:
       var x = document.getElementById("navDemo");
       if (x.className.indexOf("w3-show") == -1) {
           x.className += " w3-show";
-      } else { 
+      } else {
           x.className = x.className.replace(" w3-show", "");
       }
   }
