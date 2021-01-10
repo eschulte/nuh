@@ -1,4 +1,10 @@
 
+@media (min-width:601px){
+    body {
+        font-size:18px!important
+    }
+}
+
 body,h1,h2{font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 h2 {
