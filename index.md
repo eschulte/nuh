@@ -58,23 +58,6 @@ People's Campaign: A National Call For Moral
 Revival](https://www.poorpeoplescampaign.org), the [University of the
 Poor](https://www.poorpeoplescampaign.org), and many others.
 
-### Today
-
-Today multiple organizations continue the legacy of the NUH. The
-Kairos Center focuses on leadership development, technical assistance,
-and skills training for organizers from grassroots organizations
-nationwide working on issues of economic justice.  The Homeless Union
-History Project is part of the leadership development process of the
-University of the Poor. This project documents the history of the
-Homeless Union, conducts research, and develops curriculum for
-political education.  Its research methodology and curriculum
-production is informed by the political education and organizational
-development needs of the movement to end poverty's growing network of
-anti-poverty organizations.  The purpose of this process is to develop
-leaders with a collective understanding and analysis of this history
-for the purpose of building a powerful broad-based social movement to
-end poverty led by the poor as a united and organized social force.
-
 ### The Re-establishment of the National Union of the Homeless 
 
 <figure class="w3-right">
