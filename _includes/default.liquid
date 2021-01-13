@@ -35,7 +35,9 @@
       <div class="w3-right w3-hide-small">
         <!-- TODO: For loop. -->
         {% for anchor in anchors %}
-        {% if anchor.link %}
+        {% if anchor.slug %}
+        {% assign link = "#" | append: anchor.slug %}
+        {% else if anchor.link %}
         {% assign link = anchor.link %}
         {% else %}
         {% assign link = "#" | append: anchor.text %}
@@ -58,7 +60,9 @@
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top w3-card" style="margin-top:46px">
     {% for anchor in anchors %}
-    {% if anchor.link %}
+    {% if anchor.slug %}
+    {% assign link = "#" | append: anchor.slug %}
+    {% else if anchor.link %}
     {% assign link = anchor.link %}
     {% else %}
     {% assign link = "#" | append: anchor.text %}

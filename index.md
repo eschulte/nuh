@@ -7,6 +7,7 @@ anchors:
   - text: mission
   - text: history
     icon: fa-user # consider fa-landmark
+    slug: history-(who-we-are)
   - text: events
     icon: fa-bullhorn # consider: fa-calendar, fa-bullhorn, fa-th (grid)
   - text: locals
