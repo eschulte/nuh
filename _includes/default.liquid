@@ -37,7 +37,7 @@
         {% for anchor in anchors %}
         {% if anchor.slug %}
         {% assign link = "#" | append: anchor.slug %}
-        {% else if anchor.link %}
+        {% elsif anchor.link %}
         {% assign link = anchor.link %}
         {% else %}
         {% assign link = "#" | append: anchor.text %}
@@ -62,13 +62,13 @@
     {% for anchor in anchors %}
     {% if anchor.slug %}
     {% assign link = "#" | append: anchor.slug %}
-    {% else if anchor.link %}
+    {% elsif anchor.link %}
     {% assign link = anchor.link %}
     {% else %}
     {% assign link = "#" | append: anchor.text %}
     {% endif %}
 
-    <a href="#{{ link | url }}" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">{{ anchor.text | upcase }}</a>
+    <a href="{{ link | url }}" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">{{ anchor.text | upcase }}</a>
     {% endfor %}
   </div>
 
