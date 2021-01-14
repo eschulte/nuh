@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <html>
-<title></title>
-<meta charset="UTF-8">
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Design by Eric Schulte, source at https://github.com/eschulte/nuh. -->
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.0/css/all.css">
-<link rel="icon" href="/favicon.ico">
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<style>
-body,h1,h2{font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),
-  url('/img/bady-abbas-hB9WzC8GYeU-unsplash-prog.jpg');
-}
-</style>
-<body class="bgimg">
-  <!-- Navbar (sit on top) -->
-  <div class="w3-top">
-    <div class="w3-text-light-gray" id="myNavbar">
-      <a href="/" class="w3-bar-item w3-button w3-wide" onclick="navbar_hide()">NUH</a>
+  <title>Donate</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Design by Eric Schulte, source at https://github.com/eschulte/nuh. -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.0/css/all.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="/favicon.ico">
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <body class="w3-light-grey">
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="/" class="w3-bar-item w3-button w3-wide" onclick="navbar_hide()"><i class="nuh-icon"></i> NUH</a>
+      </div>
     </div>
-  </div>
+    <div style="padding-top:2em;">
+    </div>
 
-  <div class="w3-container w3-padding-large w3-display-middle-high w3-text-light-gray w3-center w3-xlarge">
-    <p>The donations page is still a work in progress.</p>
-<p>Eventually we will support donations through PayPal.</p>
-<p>Return to <a href="/">the NUH home page</a>.</p>
+    <div class="w3-container form-wrap">
+      <!-- Header / Home-->
+      <header class="w3-display-container w3-wide w3-grayscale-min" id="home">
+        <div class="vertical-container">
+          <img alt="NUH Logo" class="logo w3-round" src="/img/NUH_logo_Idea.jpeg">
+          <div class="w3-hide-small">
+            <h1 class="w3-huge w3-text-dark-gray title vertical-center">Donate</h1>
+          </div>
+          <div class="w3-hide-large w3-hide-medium">
+            <h1 class="w3-large w3-text-dark-gray title vertical-center">Donate</h1>
+          </div>
+        </div>
+      </header>
 
-  </div>
-</body>
+      <div class="w3-xlarge">
+        <p>Donate to support the National Union of the Homeless in our work to
+end homelessness and poverty, to fight for the human right to life,
+liberty, and the pursuit of happiness, and for social and economic
+justice for all.</p>
+<form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="business" value="TT82S3QC3A7M8" />
+<input type="hidden" name="currency_code" value="USD" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form>
+
+      </div>
+    </div>
+
+    <p>
+      <center>
+        For more information and to get involved contact:
+        <a href="mailto:2020nuh@gmail.com">2020nuh@gmail.com</a>
+      </center>
+    </p>
+  </body>
+
+  
+
 </html>

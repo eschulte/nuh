@@ -18,12 +18,14 @@ h1,h2,h3 a {
 
 .construction {
     background: #ff726f;
-    margin: 1em;
-    padding: 1em;
+    padding: 0.5em;
 }
-.construction i {
-    margin: 1em;
+@media (min-width:601px){
+    .construction {
+        margin: 2em;
+    }
 }
+
 .nuh-icon {
     background: url("/favicon.ico");
     background-repeat: no-repeat;
@@ -55,4 +57,10 @@ h1,h2,h3 a {
 }
 figure {
     clear: right;
+}
+.form-wrap {
+    border-radius: 25px;
+    border: black solid 4px;
+    margin: 1em; 
+    padding: 1em;
 }

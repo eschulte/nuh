@@ -12,6 +12,7 @@
   <link rel="icon" href="/favicon.ico">
   <script src="https://www.google.com/recaptcha/api.js"></script>
   <body class="w3-light-grey">
+
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
       <div class="w3-bar w3-white w3-card" id="myNavbar">
@@ -21,13 +22,27 @@
     <div style="padding-top:2em;">
     </div>
 
-    <div class="w3-container">
-      <h1></h1>
-      <h1 id="contact-the-national-union-of-the-homeless">Contact the National Union of the Homeless</h1>
+    <div class="w3-container form-wrap">
+      <!-- Header / Home-->
+      <header class="w3-display-container w3-wide w3-grayscale-min" id="home">
+        <div class="vertical-container">
+          <img alt="NUH Logo" class="logo w3-round" src="/img/NUH_logo_Idea.jpeg">
+          <div class="w3-hide-small">
+            <h1 class="w3-huge w3-text-dark-gray title vertical-center"></h1>
+          </div>
+          <div class="w3-hide-large w3-hide-medium">
+            <h1 class="w3-large w3-text-dark-gray title vertical-center"></h1>
+          </div>
+        </div>
+      </header>
+
+      <div class="w3-xlarge">
+        <h1 id="contact-the-national-union-of-the-homeless">Contact the National Union of the Homeless</h1>
 <span class="construction">
 <i class="fas fa-wrench"></i> Under Construction <i class="fas fa-wrench"></i>
 </span>
-<form id="contact-form" method="post" action="https://us-central1-winged-comfort-298422.cloudfunctions.net/contact-form">
+<p>In the mean time you can email us at <a href="mailto:2020nuh@gmail.com">2020nuh@gmail.com</a>.</p>
+<form style="opacity:30%;" id="contact-form">
   <label for="fname">First Name:</label><br>
   <input type="text" id="fname" name="fname" disabled><br>
   <label for="lname">Last Name:</label><br>
@@ -36,34 +51,47 @@
   <input type="text" id="email" name="email" disabled><br>
   <label for="content">Content:</label><br>
   <textarea name="content" rows="10" cols="72" disabled></textarea><br>
-  <!-- <button>Submit</button> -->
+  <button>Submit</button>
   <!-- <button class="g-recaptcha" -->
   <!--         data-sitekey="6LetGwQaAAAAAHWY2Wuv469KoCvz_Fn0pm868xfe" -->
   <!--         data-callback='onSubmit' -->
   <!--         data-action='submit'>Submit</button> -->
 </form>
 
+      </div>
     </div>
+
+    <p>
+      <center>
+        For more information and to get involved contact:
+        <a href="mailto:2020nuh@gmail.com">2020nuh@gmail.com</a>
+      </center>
+    </p>
   </body>
+
+  
   <script>
     function onSubmit(token){
-      document.getElementById("contact-form").submit();
-    }
-    document.forms['contact-form'].addEventListener('submit', (event) => {
-      event.preventDefault();
-      // TODO: do something here to show user that form is being submitted
-      fetch(event.target.action, {
-        method: 'POST',
-        body: new URLSearchParams(new FormData(event.target))
-      }).then((resp) => {
-        console.log(resp)
-        return resp.text()
-      }).then((body) => {
-        console.log("SERVER: " + body)
-        return body
-      }).catch((error) => {
-        alert("ERROR: " + error)
-      });
-    });
+  document.getElementById("{{ form-id }}").submit();
+}
+document.forms['{{ form-id }}'].addEventListener('submit', (event) => {
+  event.preventDefault();
+  // TODO: do something here to show user that form is being submitted
+  fetch(event.target.action, {
+    method: 'POST',
+    body: new URLSearchParams(new FormData(event.target))
+  }).then((resp) => {
+    console.log(resp)
+    return resp.text()
+  }).then((body) => {
+    console.log("SERVER: " + body)
+    return body
+  }).catch((error) => {
+    alert("ERROR: " + error)
+  });
+});
+
   </script>
+  
+
 </html>
