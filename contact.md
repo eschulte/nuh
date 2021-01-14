@@ -1,6 +1,6 @@
 ---
 layout: form
-page-title: Contact the National Union of the Homeless
+tab-title: Contact NUH
 title: Contact
 form-id: contact-form
 script: |
