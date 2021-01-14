@@ -1,6 +1,26 @@
 ---
 layout: form
 form-id: contact-form
+script: |
+  function onSubmit(token){
+    document.getElementById("{{ form-id }}").submit();
+  }
+  document.forms['{{ form-id }}'].addEventListener('submit', (event) => {
+    event.preventDefault();
+    // TODO: do something here to show user that form is being submitted
+    fetch(event.target.action, {
+      method: 'POST',
+      body: new URLSearchParams(new FormData(event.target))
+    }).then((resp) => {
+      console.log(resp)
+      return resp.text()
+    }).then((body) => {
+      console.log("SERVER: " + body)
+      return body
+    }).catch((error) => {
+      alert("ERROR: " + error)
+    });
+  });
 ---
 
 Contact the National Union of the Homeless
