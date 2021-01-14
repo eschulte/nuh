@@ -166,12 +166,5 @@ homelessness every day in this country
     - [Poor People's Campaign](https://www.poorpeoplescampaign.org)
     - Food Not Bombs
 
-<p>
-<center>
-For more information and to get involved contact:
-<a href="mailto:2020nuh@gmail.com">2020nuh@gmail.com</a>
-</center>
-</p>
-
 <!-- <img class="w3-round w3-col" src='{{"/img/only-get-what-organized-to-take.jpg" | url }}'> -->
 <!-- <img class="w3-round w3-col" src='{{"/img/reestablish-poster.jpg" | url }}'> -->
