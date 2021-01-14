@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
+  {% if page-title %}
+  <title>{{ page-title }}</title>
+  {% else %}
   <title>{{ title }}</title>
+  {% endif %}
   <meta charset="UTF-8">
   <meta name="description" content="{{ brief }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,8 +27,9 @@
     </div>
 
     <div class="w3-container form-wrap">
-      <!-- Header / Home-->
-      <header class="w3-display-container w3-wide w3-grayscale-min" id="home">
+
+      <!-- Title with logo -->
+      <div class="w3-display-container w3-wide w3-grayscale-min" id="home">
         <div class="vertical-container">
           <img alt="NUH Logo" class="logo w3-round" src="{{ "/img/NUH_logo_Idea.jpeg" | url }}">
           <div class="w3-hide-small">
@@ -34,7 +39,7 @@
             <h1 class="w3-large w3-text-dark-gray title vertical-center">{{ title }}</h1>
           </div>
         </div>
-      </header>
+      </div>
 
       <div class="w3-xlarge">
         {{ content | safe }}

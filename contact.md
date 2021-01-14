@@ -1,5 +1,7 @@
 ---
 layout: form
+page-title: Contact the National Union of the Homeless
+title: Contact
 form-id: contact-form
 script: |
   function onSubmit(token){
@@ -23,8 +25,7 @@ script: |
   });
 ---
 
-Contact the National Union of the Homeless
-==========================================
+Contact the National Union of the Homeless.
 
 <span class="construction">
 <i class="fas fa-wrench"></i> Under Construction <i class="fas fa-wrench"></i>
