@@ -58,6 +58,10 @@ h1,h2,h3 a {
 figure {
     clear: right;
 }
+figure img {
+    max-width:100%;
+    height:auto;
+}
 .form-wrap {
     border-radius: 25px;
     border: black solid 4px;
