@@ -8,7 +8,7 @@
     <!-- Design by Eric Schulte, source at https://github.com/eschulte/nuh. -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.0/css/all.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.14.0/css/all.css">
     <link rel="stylesheet" href="{{ "/style.css"|url }}">
     <link rel="icon" href="{{ "/favicon.ico" |url }}">
   </head>
@@ -44,7 +44,11 @@
         {% endif %}
 
         {% if anchor.icon %}
+        {% if anchor.icon-namespace %}
+        <a href="{{ link | url }}" class="w3-bar-item w3-button"><i class="{{ anchor.icon-namespace }} {{ anchor.icon }}"></i> {{ anchor.text | upcase }}</a>
+        {% else %}
         <a href="{{ link | url }}" class="w3-bar-item w3-button"><i class="fas {{ anchor.icon }}"></i> {{ anchor.text | upcase }}</a>
+        {% endif %}
         {% else %}
         <a href="{{ link | url }}" class="w3-bar-item w3-button">{{ anchor.text | upcase }}</a>
         {% endif %}
