@@ -15,7 +15,7 @@ anchors:
   - text: donate
     icon: fa-donate
     link: /donate
-  - text: contact
+  - text: join us
     icon: fa-envelope
     link: /contact
 ---
@@ -160,7 +160,7 @@ homelessness every day in this country
 ## Get Involved
 
 - [Donate]({{ "/donate" | url }})
-- [Contact]({{ "/contact" | url }})
+- [Join us]({{ "/contact" | url }})
 - Partner organizations:
     - [University of the Poor](https://universityofthepoor.org/)
     - [Poor People's Campaign](https://www.poorpeoplescampaign.org)
