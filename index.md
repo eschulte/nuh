@@ -12,6 +12,9 @@ anchors:
     icon: fa-bullhorn # consider: fa-calendar, fa-bullhorn, fa-th (grid)
   - text: locals
     icon: fa-hands-helping
+  - text: news
+    icon-namespace: fab
+    icon: fa-microblog
   - text: donate
     icon: fa-donate
     link: /donate
@@ -156,6 +159,12 @@ homelessness every day in this country
 <!-- {% endfor %} -->
 <!-- </table> -->
 <!-- </div> -->
+
+## News
+
+{% for post in collections.posts %}
+- [{{ post.data.title }}]({{ post.url }})
+{% endfor %}
 
 ## Get Involved
 
