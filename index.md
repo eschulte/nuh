@@ -164,7 +164,7 @@ homelessness every day in this country
 - Partner organizations:
     - [University of the Poor](https://universityofthepoor.org/)
     - [Poor People's Campaign](https://www.poorpeoplescampaign.org)
-    - Food Not Bombs
+    - [Food Not Bombs](http://foodnotbombs.net)
 
 <!-- <img class="w3-round w3-col" src='{{"/img/only-get-what-organized-to-take.jpg" | url }}'> -->
 <!-- <img class="w3-round w3-col" src='{{"/img/reestablish-poster.jpg" | url }}'> -->
