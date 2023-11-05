@@ -9,7 +9,7 @@ anchors:
     icon: fa-user # consider fa-landmark
     slug: history-(who-we-are)
   - text: events
-    icon: fa-bullhorn # consider: fa-calendar, fa-bullhorn, fa-th (grid)
+    icon: fa-calendar # consider: fa-calendar, fa-bullhorn, fa-th (grid)
   - text: blog
     icon: fa-bullhorn # maybe fa-pen as another alternative
     link: /blog
