@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This is a test example blog</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="The National Union of the Homeless (NUH) is made up of members currently and formerly experiencing homelessness as well as organizers understanding this is a fight for the survival of all the poor and dispossessed in our nation. The power the NUH is proof that we can speak for ourselves, think for ourselves, and organize together to lead not just ourselves but the nation in changing the very system that continues to create homelessness every day in this country.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Design by Eric Schulte, source at https://github.com/eschulte/nuh. -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.0/css/all.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/favicon.ico">
+  </head>
+<body class="w3-light-grey">
+
+  <!-- Header / Home-->
+  <header class="w3-display-container w3-wide w3-grayscale-min" style="padding-top: 3em;" id="home">
+    <div class="vertical-container">
+      <img alt="NUH Logo" class="logo w3-round" src="/img/NUH_logo_Idea.jpeg">
+      <div class="w3-hide-small">
+        <h1 class="w3-huge w3-text-dark-gray title vertical-center">This is a test example blog</h1>
+      </div>
+      <div class="w3-hide-large w3-hide-medium">
+        <h1 class="w3-large w3-text-dark-gray title vertical-center">This is a test example blog</h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="/#home" class="w3-bar-item w3-button w3-wide" onclick="navbar_hide()"><i class="nuh-icon"></i> NUH</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <!-- TODO: For loop. -->
+        
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="navbar_toggle()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top w3-card" style="margin-top:46px">
+    
+  </div>
+
+  <div class="w3-container">
+    
+<span class="date">Sun Nov 05 2023 05:00:00 GMT+0000 (Coordinated Universal Time)</span>
+
+<div>
+  <p>Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.
+Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse
+potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam,
+dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam
+laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.
+Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.
+Vestibulum convallis, lorem a tempus semper, dui dui euismod elit,
+vitae placerat urna tortor vitae lacus.  Nullam libero mauris,
+consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt
+felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a
+rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo
+sit amet elit.</p>
+<ul>
+<li>Nullam libero mauris, consequat quis, varius et, dictum id, arcu.</li>
+<li>Mauris ac felis vel velit tristique imperdiet.</li>
+<li>Phasellus lacus.</li>
+<li>Nunc rutrum turpis sed pede.</li>
+</ul>
+
+</div>
+
+  </div>
+  <p>
+    <center>
+      For more information and to get involved contact:
+      <a href="mailto:2020nuh@gmail.com">2020nuh@gmail.com</a>
+    </center>
+  </p>
+</body>
+
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function navbar_toggle() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+  function navbar_hide() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") != -1) {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+</script>
+
+</html>

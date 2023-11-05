@@ -68,3 +68,8 @@ figure img {
     margin: 1em; 
     padding: 1em;
 }
+
+.date {
+    /* font-size: small; */
+    color: gray;
+}
