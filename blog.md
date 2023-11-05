@@ -1,6 +1,6 @@
 ---
 layout: default
-title: National Union of the Homeless Blog
+title: Blog
 ---
 
 {% assign sorted = collections.blog | reverse %}
