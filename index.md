@@ -10,6 +10,9 @@ anchors:
     slug: history-(who-we-are)
   - text: events
     icon: fa-bullhorn # consider: fa-calendar, fa-bullhorn, fa-th (grid)
+  - text: blog
+    icon: fa-bullhorn # maybe fa-pen as another alternative
+    link: /blog
   - text: locals
     icon: fa-hands-helping
   - text: donate
