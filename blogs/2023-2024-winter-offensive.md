@@ -75,7 +75,7 @@ dates throughout the season.
 Follow us on social media where we will announce upcoming Winter Offensive Activities/Actions:
 
 Facebook
-:   https://www.facebook.com/NationalUnionoftheHomeless
+:   [https://www.facebook.com/NationalUnionoftheHomeless](https://www.facebook.com/NationalUnionoftheHomeless)
 
 Instagram
 :   [@nationalunionofthehomeless](https://www.instagram.com/nationalunionofthehomeless/)
