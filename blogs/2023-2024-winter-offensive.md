@@ -1,6 +1,15 @@
 ---
 layout: blog
 tags: blog
+hashtags:
+  - WinterOffensive
+  - WinterOffenssive20232024
+  - YouOnlyGetWhatYoureOrganizedToTake
+  - HousingIsAHumanRight
+  - HealthcareIsAHumanRight
+  - HomelessNotHelpless
+  - PowerNotPity
+  - ChangeNotCharity
 date: 2023-12-08
 title: Winter Offensive Organizing Drive 2023/2024
 ---
@@ -84,12 +93,3 @@ https://www.facebook.com/kairoscenternyc
 
 To learn more about the Winter Offensive check out
 [The Homeless Union and the Winter Offensive to Organize the Poor and Dispossessed](https://universityofthepoor.org/homeless-union-winter-offensive/)
-
-#WinterOffensive
-#WinterOffenssive20232024
-#YouOnlyGetWhatYoureOrganizedToTake
-#HousingIsAHumanRight
-#HealthcareIsAHumanRight
-#HomelessNotHelpless
-#PowerNotPity
-#ChangeNotCharity

@@ -2,10 +2,18 @@
 layout: default
 ---
 
-<span class="date">{{ date }}</span>
+<span class="date">{{ date | date: "%Y-%m-%d" }}</span>
 
 <div>
   {{ content }}
+</div>
+
+<div class="hashtags">
+  {% for tag in hashtags %}
+  <span class="tag"> 
+    #<span class="tag-body">{{ tag }}</span>
+  </span>
+  {% endfor %}
 </div>
 
 <div class="socials">
