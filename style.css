@@ -73,3 +73,22 @@ figure img {
     /* font-size: small; */
     color: gray;
 }
+
+.socials {
+  
+}
+
+.socials {
+    margin: auto;
+    text-align: center;
+}
+
+.socials ul {
+    list-style-type: none;
+    
+}
+
+.socials li {
+    display: inline-block;
+    margin-right: 10px;
+}
