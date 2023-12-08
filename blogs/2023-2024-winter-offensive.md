@@ -23,10 +23,10 @@ original National Union of the Homeless from the late 1980's to mid
 Union across the nation!
 
 The National Winter Offensive season takes place annually from
-Thanksgiving through the Reverend Martin Luther King Jr Day with key
-dates throughout the season.
+Thanksgiving through the Reverend Martin Luther King Jr Day including
+actions on key dates throughout the season.
 
-## Important Winter Offensive dates around which actions and or protests will take place:
+## Important Winter Offensive dates of action and protests:
 
 1.  **December 10th – Anniversary of the UN Universal Declaration of
     Human Rights
@@ -43,11 +43,11 @@ dates throughout the season.
     women, and children in potters’ fields around the country and
     internationally. We honor those we have lost due to this unjust
     system that denies us our basic human rights and pledge to honor
-    them by continuing to unite and organize for our human rights for
+    them by continuing to unite and organize for human rights for
     all!
 
 3.  **December 25th - Birth of Jesus Christ**, born a poor working
-    class unhoused child turned revolutionary, we commemorate his
+    class unhoused child, turned revolutionary; we commemorate his
     Ministry, which was a Poor People’s Campaign that included
     healthcare without co-pays. He educated and trained disciples,
     making “fishers of men” who built a powerful social movement.
@@ -92,4 +92,4 @@ Facebook page every Sunday throughout the season, 6pm ET/ 3pm PT.
 https://www.facebook.com/kairoscenternyc
 
 To learn more about the Winter Offensive check out
-[The Homeless Union and the Winter Offensive to Organize the Poor and Dispossessed](https://universityofthepoor.org/homeless-union-winter-offensive/)
+[The Homeless Union and the Winter Offensive to Organize the Poor and Dispossessed](https://universityofthepoor.org/homeless-union-winter-offensive/).
