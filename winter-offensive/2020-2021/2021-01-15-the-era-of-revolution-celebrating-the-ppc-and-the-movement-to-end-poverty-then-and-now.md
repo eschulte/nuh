@@ -1,8 +1,12 @@
 ---
-layout: event
+layout: default
 tags: 2020-2021
 date: 2021-01-15
 title: The Revolutionary Life of MLK and PPC, then and now
+anchors:
+  - text: winter-offensives
+    icon: fa-snowflake # consider: fa-calendar, fa-bullhorn, fa-th (grid)
+    link: /winter-offensive
 brief: |
     The  National Union of the Homeless and the Nonviolent Medicaid Army, as part of the 2020 NUH Winter Offensive, will host a gathering lifting up the revolutionary work of Rev Dr Martin Luther King as he build the 1968 Poor Peoples Campaign.
 ---

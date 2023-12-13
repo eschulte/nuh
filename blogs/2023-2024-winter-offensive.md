@@ -12,6 +12,10 @@ hashtags:
   - ChangeNotCharity
 date: 2023-12-08
 title: Winter Offensive Organizing Drive 2023/2024
+anchors:
+  - text: blog
+    icon: fa-bullhorn # maybe fa-pen as another alternative
+    link: /blog
 ---
 
 The National Union of the Homeless and partners have launched our
