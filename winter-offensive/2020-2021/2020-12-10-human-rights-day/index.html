@@ -1,37 +1,95 @@
 <!DOCTYPE html>
 <html>
-  <title>Human Rights Day Virtual Gathering</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="The National Union of the Homeless and the National Welfare Rights Union, as part of the NUH 2020 Winter Offensive, will host a Human Rights Day Political Education and Panel Discussion Virtual Gathering in celebration of the anniversary of the Universal Declaration of Human Rights. This event will highlight the USA's history of struggle for our basic needs as human rights such as housing, health, a living wage, and an adequate standard of living and our general welfare. The panel will include national organizers from various fronts of struggle discussing their work to unite our class, build our politically independent organization and build this movement led by the poor & dispossessed as a united social force, across all lines of division to end poverty and homelessness NOW.
-">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Design by Eric Schulte, source at https://github.com/eschulte/nuh. -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.0/css/all.css">
-  <link rel="stylesheet" href="/style.css">
-  <link rel="icon" href="/favicon.ico">
-  <body class="w3-light-grey">
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-      <div class="w3-bar w3-white w3-card" id="myNavbar">
-        <a href="/" class="w3-bar-item w3-button w3-wide" onclick="navbar_hide()"><i class="nuh-icon"></i> NUH</a>
+  <head>
+    <title>Human Rights Day Virtual Gathering</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="The National Union of the Homeless (NUH) is made up of members currently and formerly experiencing homelessness as well as organizers understanding this is a fight for the survival of all the poor and dispossessed in our nation. The power the NUH is proof that we can speak for ourselves, think for ourselves, and organize together to lead not just ourselves but the nation in changing the very system that continues to create homelessness every day in this country.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Design by Eric Schulte, source at https://github.com/eschulte/nuh. -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/favicon.ico">
+  </head>
+<body class="w3-light-grey">
+
+  <!-- Header / Home-->
+  <header class="w3-display-container w3-wide w3-grayscale-min" style="padding-top: 3em;" id="home">
+    <div class="vertical-container">
+      <img alt="NUH Logo" class="logo w3-round" src="/img/NUH_logo_Idea.jpeg">
+      <div class="w3-hide-small">
+        <h1 class="w3-huge w3-text-dark-gray title vertical-center">Human Rights Day Virtual Gathering</h1>
+      </div>
+      <div class="w3-hide-large w3-hide-medium">
+        <h1 class="w3-large w3-text-dark-gray title vertical-center">Human Rights Day Virtual Gathering</h1>
       </div>
     </div>
-    <div style="padding-top:2em;">
-    </div>
+  </header>
 
-    <div class="w3-container">
-      <h1>Human Rights Day Virtual Gathering</h1>
-      <p><b>12/10/2020</b></p>
-      
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="/#home" class="w3-bar-item w3-button w3-wide" onclick="navbar_hide()"><i class="nuh-icon"></i> NUH</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <!-- TODO: For loop. -->
+        
+        
+        
+        
+
+        
+        <a href="/winter-offensive" class="w3-bar-item w3-button"><i class="fas fa-snowflake"></i> WINTER-OFFENSIVES</a>
+        
+        
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="navbar_toggle()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    <p>
-      <center>
-        For more information and to get involved contact:
-        <a href="mailto:2020nuh@gmail.com">2020nuh@gmail.com</a>
-      </center>
-    </p>
-  </body>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top w3-card" style="margin-top:46px">
+    
+    
+    
+    
+
+    <a href="/winter-offensive" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">WINTER-OFFENSIVES</a>
+    
+  </div>
+
+  <div class="w3-container">
+    
+  </div>
+  <p>
+    <center>
+      For more information and to get involved contact:
+      <a href="mailto:2020nuh@gmail.com">2020nuh@gmail.com</a>
+    </center>
+  </p>
+</body>
+
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function navbar_toggle() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+  function navbar_hide() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") != -1) {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+</script>
 
 </html>
