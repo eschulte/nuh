@@ -1,19 +1,18 @@
 ---
 layout: default
-title: Blog
+title: Winter Offensives
 anchors:
   - text: mission
     link: /#mission
   - text: history
     icon: fa-user # consider fa-landmark
-    slug: history-(who-we-are)
     link: /#history-(who-we-are)
   - text: events
     icon: fa-calendar # consider: fa-calendar, fa-bullhorn, fa-th (grid)
     link: /events
-  - text: winter-offensives
-    icon: fa-snowflake # consider: fa-calendar, fa-bullhorn, fa-th (grid)
-    link: /winter-offensive
+  - text: blog
+    icon: fa-bullhorn # maybe fa-pen as another alternative
+    link: /blog
   - text: locals
     icon: fa-hands-helping
     link: /#locals
@@ -25,9 +24,9 @@ anchors:
     link: /contact
 ---
 
-{% assign sorted = collections.blog | reverse %}
-{% for blog in sorted %}
+{% assign sorted = collections.winter-offensive | reverse %}
+{% for winter_offensive in sorted %}
 
-*   [{{ blog.data.title }}]({{ blog.url | url }}) on *{{ blog.date | fixDate | date: "%B %e, %Y" }}*
+*   [{{ winter_offensive.data.title }}]({{ winter_offensive.url | url }})
 
 {% endfor %}

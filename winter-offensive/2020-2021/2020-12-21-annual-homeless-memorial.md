@@ -1,6 +1,6 @@
 ---
 layout: event
-tags: event
+tags: 2020-2021
 date: 2020-12-21
 title: Annual National Homeless Memorial Day
 brief: |

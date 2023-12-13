@@ -1,6 +1,6 @@
 ---
 layout: event
-tags: event
+tags: 2020-2021
 date: 2021-01-15
 title: The Revolutionary Life of MLK and PPC, then and now
 brief: |
