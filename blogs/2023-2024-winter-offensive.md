@@ -1,6 +1,8 @@
 ---
 layout: blog
-tags: blog
+tags:
+  - blog
+  - 2023-2024
 hashtags:
   - WinterOffensive
   - WinterOffenssive20232024
