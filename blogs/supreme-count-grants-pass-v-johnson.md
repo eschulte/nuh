@@ -190,9 +190,7 @@ punished for the poverty the people in power enact through their
 policies via this death dealing system.
 
 To get involved in a local chapter near you or to start a new local
-chapter send us an email at: 2020nuh@gmail.com
-
-www.nationalunionofthehomeless.org 
+chapter send us an email at: <a href="mailto:2020nuh@gmail.com">2020nuh@gmail.com</a>
 
 
 ## References/Citations 
