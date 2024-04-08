@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
   let markdownIt = require("markdown-it");
   let md = markdownIt({html: true})
   md.use(require("markdown-it-anchor"));
+  md.use(require("markdown-it-footnote"));
   eleventyConfig.setLibrary("md", md);
 
   eleventyConfig.addPairedShortcode("markdown", (content) => {

@@ -21,7 +21,7 @@ jobs:
 
       - run: npm install @11ty/eleventy -g
 
-      - run: npm install markdown-it markdown-it-anchor
+      - run: npm install markdown-it markdown-it-anchor markdown-it-footnote
 
       - run: eleventy
 
