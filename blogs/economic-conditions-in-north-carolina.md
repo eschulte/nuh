@@ -5,7 +5,7 @@ tags:
 hashtags:
 date: 2024-09-29
 title: Economic Conditions in North Carolina
-preview_image: /img/nc-state-money.png
+preview_image: /img/nc-state-money.jpg
 anchors:
   - text: blog
     icon: fa-bullhorn # maybe fa-pen as another alternative
