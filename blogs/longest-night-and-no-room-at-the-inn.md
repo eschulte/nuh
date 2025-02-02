@@ -34,7 +34,7 @@ Join us, the Nation Union of the Homeless and the Nonviolent Medicaid Army, as w
 
 ## **YOU ONLY GET WHAT YOU ARE ORGANIZED TO TAKE!**
 
-![You Only Get What You're Organized to Take!](imgsrc="./img/longest_night_people.jpeg")  
+![You Only Get What You're Organized to Take!](/img/longest_night_people.jpeg)
 
 ## **Boston Massachusetts NUH Reflects on “Longest Night”- 12/21/24**
 
