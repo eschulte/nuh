@@ -107,22 +107,22 @@ homelessness every day in this country
 
 ## Locals
 
+<div class="w3-container">
+<table class="w3-table w3-bordered w3-table-all">
+<colgroup>
+<col style="width:33%;">
+<col style="width:66%;">
+</colgroup>
+<tr class="w3-bordered"><th>Location</th><th>Name</th></tr>
+{% for local in collections.local %}
+<tr class="w3-bordered"><td>{{local.data.location}}</td><td><a href="{{ local.url }}">{{local.data.name}}</a></td></tr>
+{% endfor %}
+</table>
+</div>
+
 <span class="construction">
 <i class="fas fa-wrench"></i> Under Construction <i class="fas fa-wrench"></i>
 </span>
-
-<!-- <div class="w3-container"> -->
-<!-- <table class="w3-table w3-bordered w3-table-all"> -->
-<!-- <colgroup> -->
-<!-- <col style="width:33%;"> -->
-<!-- <col style="width:66%;"> -->
-<!-- </colgroup> -->
-<!-- <tr class="w3-bordered"><th>Location</th><th>Name</th></tr> -->
-<!-- {% for local in collections.local %} -->
-<!-- <tr class="w3-bordered"><td>{{local.data.location}}</td><td><a href="{{ local.url }}">{{local.data.name}}</a></td></tr> -->
-<!-- {% endfor %} -->
-<!-- </table> -->
-<!-- </div> -->
 
 ## Get Involved
 
