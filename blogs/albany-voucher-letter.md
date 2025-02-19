@@ -5,7 +5,7 @@ tags:
 hashtags:
 date: 2025-02-18
 title: "Albany Union of the Homeless: Housing Access Vouchers needs support of governor and Legislature"
-preview_image: /img/2024_wo_collage.jpg
+preview_image: /img/albany.jpg
 anchors:
   - text: blog
     icon: fa-bullhorn # maybe fa-pen as another alternative
