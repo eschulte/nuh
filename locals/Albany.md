@@ -7,3 +7,5 @@ location: City & County of Albany, NY
 
 Text or Call: (518)407-3688
 We meet on Thursday mornings, call or text to confirm
+
+![Albany Chapter - National Union of the Homeless](/img/albany.jpg)
