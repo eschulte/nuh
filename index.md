@@ -120,10 +120,6 @@ homelessness every day in this country
 </table>
 </div>
 
-<span class="construction">
-<i class="fas fa-wrench"></i> Under Construction <i class="fas fa-wrench"></i>
-</span>
-
 ## Get Involved
 
 - [Donate]({{ "/donate" | url }})
