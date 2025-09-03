@@ -13,7 +13,7 @@ anchors:
 
 _Anthony Prince, Nijmie Dzurinko, Larry Regan_
 
-> _The August 11, 2025 explosion at U.S. Steel’s Clairton (Pennsylvania) Coke Works
+_The August 11, 2025 explosion at U.S. Steel’s Clairton (Pennsylvania) Coke Works
 comes 118 years after journalist William Hard wrote “Making Steel and Killing
 Men,” a groundbreaking report on U.S. Steel’s South (Chicago) Works where 46
 men were killed in a single year._
