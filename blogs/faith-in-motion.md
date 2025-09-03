@@ -5,7 +5,7 @@ tags:
 hashtags:
 date: 2025-08-29
 title: 'Faith in Motion: What It Means to Stand With the Unhoused'
-preview_image: /img/faithinmotion_5.jpg
+preview_image: /img/faithinmotion_1.jpeg
 anchors:
   - text: blog
     icon: fa-bullhorn # maybe fa-pen as another alternative
