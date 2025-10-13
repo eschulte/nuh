@@ -4,7 +4,7 @@ tags:
   - blog
 hashtags:
 date: 2025-10-03
-title: Twenty years of struggle and solidarity: National Union of the Homeless Congratulates Abahlali baseMjondolo (Shack Dwellers Movement)     
+title: Twenty years of struggle and solidarity - National Union of the Homeless Congratulates Abahlali baseMjondolo (Shack Dwellers Movement)     
 preview_image: /img/abahlali_basemjondolo_20_years.jpg
 anchors:
   - text: blog
