@@ -12,6 +12,7 @@ anchors:
     link: /blog
 ---
 October 3, 2025
+
 On behalf of the National Union of the Homeless, we wish to congratulate our comrades 
 in struggle on the 20th Anniversary of the founding of the Abahlali baseMjondolo.  
  
@@ -38,9 +39,12 @@ body and commitment to our shared struggle.
 
 # **Long live Abahlali baseMjondolo!**
 
-## For the National Union of the Homeless,  
+## For the National Union of the Homeless,
+
 Anthony Prince, Lead Organizer/General Counsel 
+
 Kristin Colangelo,  Nat’l Membership Development Director 
+
 Willie Baptist and Rev. Savina Martin, Sr. Advisors
 
 ![Abahlali baseMjondolo](/img/abahlali_basemjondolo_20_years.jpg)
