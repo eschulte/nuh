@@ -36,12 +36,16 @@ celebrate 20 years of struggle and solidarity, know that the National Union of t
 be with you there in spirit and that in the years to come we will continue to be with you in mind, 
 body and commitment to our shared struggle.
 
-# *Long live Abahlali baseMjondolo!*
+# **Long live Abahlali baseMjondolo!**
 
 ## For the National Union of the Homeless,  
 Anthony Prince, Lead Organizer/General Counsel 
 Kristin Colangelo,  Nat’l Membership Development Director 
 Willie Baptist and Rev. Savina Martin, Sr. Advisors
+
+![Abahlali baseMjondolo](/img/abahlali_basemjondolo_20_years.jpg)
+
+![NUH Logo](/img/NUH_logo_Idea.jpeg)
 
 
 
