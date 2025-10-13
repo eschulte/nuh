@@ -11,7 +11,6 @@ anchors:
     icon: fa-bullhorn # maybe fa-pen as another alternative
     link: /blog
 ---
-October 3, 2025
 
 On behalf of the National Union of the Homeless, we wish to congratulate our comrades 
 in struggle on the 20th Anniversary of the founding of the Abahlali baseMjondolo.  
