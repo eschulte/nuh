@@ -5,6 +5,9 @@ name: ACT UP Philly Homeless Union
 location: Philadelphia, Pennsylvania
 ---
 
+## __*Mission of the National Union of the Homeless:*__
+
+The heart and soul of the National Union of the Homeless is to commit our lives to ending homelessness and poverty and to work tirelessly for the human right to life, liberty, and the pursuit of happiness, for social and economic justice for all. We dedicate ourselves to raising the awareness of our sisters and brothers, to planning a sustained struggle and to building an organization that can obtain freedom through revolutionary perseverance. We pledge to deepen our personal commitment to end all forms of exploitation, racism, sexism, and abuse. True solidarity demands that we create not only the new society, but also the new human being.
 
 
 ## __*What We Do:*__
