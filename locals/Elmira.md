@@ -15,6 +15,7 @@ Next meeting dates:
 * 12/4
 * 12/18
 
+![Elmira Longest Night](/img/elmira_wo_2025.jpg)
 
 * You Only Get What You Are Organized to Take!
 * Housing Now, Not Death in the Streets!
