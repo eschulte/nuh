@@ -152,6 +152,7 @@ homelessness every day in this country
 - [Donate]({{ "/donate" | url }})
 - [Join us]({{ "/contact" | url }})
 - Partner organizations:
+    - [Nonviolent Medicaid Army](https://nonviolentmedicaidarmy.org/)
     - [University of the Poor](https://universityofthepoor.org/)
     - [Poor People's Campaign](https://www.poorpeoplescampaign.org)
     - [Food Not Bombs](http://foodnotbombs.net)
