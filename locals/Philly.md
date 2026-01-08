@@ -1,7 +1,7 @@
 ---
 layout: local
 tags: local
-name: ACT UP Philly Homeless Union
+name: Philly Homeless Union
 location: Philadelphia, Pennsylvania
 ---
 
@@ -15,7 +15,7 @@ The heart and soul of the National Union of the Homeless is to commit our lives 
 Outreach every Friday morning at Appletree Family Center: coffee, cigarettes, hot food, snacks
 Document and report and follow up on grievances & complaints against shelters and other places that discriminate against the unhoused
 Use the court system to fight for our rights to housing
-Fight to have an ombudsman (inspector) over the shelter system (we won – but they still haven’t hired someone!)
+Fight to have an ombudsman (inspector) over the shelter system (we won this and are working with the ombudsman to protect our rights!)
 Fight to have Hahnemann Hospital re-opened by the city as a 24-hour drop-in resource center with private rooms, showers, laundry, resources, detox, etc.
 Host community events, protests, and meetings
 Create our own media: sharing stories, videos, and memes to educate and be heard
@@ -44,4 +44,4 @@ Phone: 215-360-3086
 
 We are looking for new members! Can you help serve coffee, tell your story, listen to others, or help someone make a call? We need you!
 
-![ACT UP Philly Homeless Union](/img/philly_local.jpg)
+![Philly Homeless Union](/img/philly_local.jpg)
