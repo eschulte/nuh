@@ -26,7 +26,7 @@ anchors:
  <div align="center">
    <b>NUH 2025 WINTER OFFENSIVE STATEMENT</b> 
  </div>
-[*Get involved with this year's Winter Offensive*](https://actionnetwork.org/forms/2025-winter-offensive?source=direct_link&)
+[Get involved with this year's Winter Offensive](https://actionnetwork.org/forms/2025-winter-offensive?source=direct_link&)
  
 During the Holiday Season The National Union of the Homeless comes together across 5 U.S. regions (the South, Appalachia, Midwest, West and the Northeast) to declare: Housing and Healthcare NOW. An End to Genocide and the War Economy! No more death on the streets both here and abroad!  
 
