@@ -12,35 +12,35 @@ The heart and soul of the National Union of the Homeless is to commit our lives 
 
 ## __*What We Do:*__
 
-Outreach every Friday morning at Appletree Family Center: coffee, cigarettes, hot food, snacks
-Document and report and follow up on grievances & complaints against shelters and other places that discriminate against the unhoused
-Use the court system to fight for our rights to housing
-Fight to have an ombudsman (inspector) over the shelter system (we won this and are working with the ombudsman to protect our rights!)
-Fight to have Hahnemann Hospital re-opened by the city as a 24-hour drop-in resource center with private rooms, showers, laundry, resources, detox, etc.
-Host community events, protests, and meetings
-Create our own media: sharing stories, videos, and memes to educate and be heard
-Share information, experiences, and resources
+* Outreach every Friday morning at Appletree Family Center: coffee, cigarettes, hot food, snacks
+* Document and report and follow up on grievances & complaints against shelters and other places that discriminate against the unhoused
+* Use the court system to fight for our rights to housing
+* Fight to have an ombudsman (inspector) over the shelter system (we won this and are working with the ombudsman to protect our rights!)
+* Fight to have Hahnemann Hospital re-opened by the city as a 24-hour drop-in resource center with private rooms, showers, laundry, resources, detox, etc.
+* Host community events, protests, and meetings
+* Create our own media: sharing stories, videos, and memes to educate and be heard
+* Share information, experiences, and resources
 
 ## __*Resources We Offer:*__
 
-List of landlords that accept Section 8 and have rooms, apartments, or houses available
-List of places with hot meals and food around the city
-Help filing grievances
-Help making calls, contacting legal services
-Information about the rights we are supposed to have around housing & shelter
-Connections to lawyers that can speed up SSDI applications
+* List of landlords that accept Section 8 and have rooms, apartments, or houses available
+* List of places with hot meals and food around the city
+* Help filing grievances
+* Help making calls, contacting legal services
+* Information about the rights we are supposed to have around housing & shelter
+* Connections to lawyers that can speed up SSDI applications
 
 ## __*Resources We Don’t Have:*__
 
-We do NOT have funding to help with rent, security, etc.
-We are NOT landlords and don’t personally have available rooms or houses
-We do NOT operate a shelter and don’t have a place for people to stay
+* We do NOT have funding to help with rent, security, etc.
+* We are NOT landlords and don’t personally have available rooms or houses
+* We do NOT operate a shelter and don’t have a place for people to stay
 
 ## __*Join Us:*__
 
-Friday morning, 7am - 9am at 1430 Cherry St. (Appletree Family Center)
-Email: phillyhomelessunion/at/gmail.com
-Phone: 215-360-3086
+* Friday morning, 7am - 9am at 1430 Cherry St. (Appletree Family Center)
+* Email: phillyhomelessunion@gmail.com
+* Phone: 215-360-3086
 
 We are looking for new members! Can you help serve coffee, tell your story, listen to others, or help someone make a call? We need you!
 
