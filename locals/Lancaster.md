@@ -36,7 +36,7 @@ To get involved with our work or to partner with us on organizing a food drive t
 
 You can also connect with us during the pantry and soup kitchen hours at the Historic Salem United Church of Christ in Columbia, PA.
 
-## January Food Pantry & Soup Kitchen schedule & Location:
+## Food Pantry & Soup Kitchen schedule & Location:
 
 **When**: Saturday's 4-6pm & Thursday's 5:30-7:30pm 
 
