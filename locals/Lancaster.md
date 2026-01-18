@@ -38,7 +38,7 @@ You can also connect with us during the pantry and soup kitchen hours at the His
 
 ## January Food Pantry & Soup Kitchen schedule & Location:
 
-**When**: Saturday's 4-6pm & Sunday's 1-3pm (*Schedule is subject to change come February)
+**When**: Saturday's 4-6pm & Thursday's 5:30-7:30pm 
 
 **Where**: 324 Walnut Street, Columbia PA 17512
 
