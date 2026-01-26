@@ -16,6 +16,11 @@ h1,h2,h3 a {
     text-decoration: none;
 }
 
+.w3-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
 .construction {
     background: #ff726f;
     padding: 0.5em;
