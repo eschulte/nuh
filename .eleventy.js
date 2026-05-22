@@ -19,5 +19,7 @@ module.exports = function(eleventyConfig) {
     value.setTime(value.getTime() + (5*60*60*1000));
     return value; })
 
+  eleventyConfig.addPassthroughCopy("admin");
+
   return config;
 };

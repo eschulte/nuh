@@ -6,10 +6,6 @@ hashtags:
 date: 2025-01-20
 title: Dinner and Revolutionary Organizing
 preview_image: /img/elmira.jpg
-anchors:
-  - text: blog
-    icon: fa-bullhorn # maybe fa-pen as another alternative
-    link: /blog
 ---
 
 

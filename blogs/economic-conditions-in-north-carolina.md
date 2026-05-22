@@ -6,10 +6,6 @@ hashtags:
 date: 2024-09-29
 title: Economic Conditions in North Carolina
 preview_image: /img/nc-state-money.jpg
-anchors:
-  - text: blog
-    icon: fa-bullhorn # maybe fa-pen as another alternative
-    link: /blog
 ---
 
 In North Carolina, the powers that be have sustained an all-out assault on poor and working people in the state. Even before the recent ruling on Grants Pass v. Johnson, where the US Supreme Court ruled it legal to criminalize homelessness, our local governments, including the capital Raleigh, have been rolling out laws that forcefully exclude houseless folks from so-called public property. Even during daytime hours, families and individuals are being threatened and harrassed by city employees while enjoying parks, while housed families are left undisturbed. In a state with [4.2 million poor and low-income people](https://www.poorpeoplescampaign.org/resource/factsheets/) who are one paycheck or health crises away from being homeless, this is an alarming trend for our class. We say: Fight Poverty, not the Poor.

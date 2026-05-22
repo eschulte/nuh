@@ -5,10 +5,6 @@ date: 2020-12-27
 title: Birth of a Movement
 link-name: Event video
 link: https://www.youtube.com/watch?v=6ogk5mRdzfU
-anchors:
-  - text: winter-offensives
-    icon: fa-snowflake # consider: fa-calendar, fa-bullhorn, fa-th (grid)
-    link: /winter-offensive
 ---
 
 In our final Freedom Church of the Poor service of 2020 we continue to

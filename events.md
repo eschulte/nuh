@@ -1,27 +1,6 @@
 ---
 layout: default
 title: Events
-anchors:
-  - text: mission
-    link: /#mission
-  - text: history
-    icon: fa-user # consider fa-landmark
-    link: /#history-(who-we-are)
-  - text: winter-offensives
-    icon: fa-snowflake # consider: fa-calendar, fa-bullhorn, fa-th (grid)
-    link: /winter-offensive
-  - text: blog
-    icon: fa-bullhorn # maybe fa-pen as another alternative
-    link: /blog
-  - text: locals
-    icon: fa-hands-helping
-    link: /#locals
-  - text: donate
-    icon: fa-donate
-    link: /donate
-  - text: join us
-    icon: fa-envelope
-    link: /contact
 ---
 
 ## Events

@@ -1,5 +1,5 @@
 ---
-layout: form
+layout: default
 title: Donate
 tab-title: Donate to NUH
 ---

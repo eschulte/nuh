@@ -6,10 +6,6 @@ hashtags:
 date: 2024-12-21
 title: “Longest Night” and “No Room at the Inn” 
 preview_image: /img/2024_wo_collage.jpg
-anchors:
-  - text: blog
-    icon: fa-bullhorn # maybe fa-pen as another alternative
-    link: /blog
 ---
 
 

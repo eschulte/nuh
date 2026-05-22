@@ -3,10 +3,6 @@ layout: default
 tags: 2020-2021
 date: 2020-12-10
 title: Human Rights Day Virtual Gathering
-anchors:
-  - text: winter-offensives
-    icon: fa-snowflake # consider: fa-calendar, fa-bullhorn, fa-th (grid)
-    link: /winter-offensive
 ---
 
 The National Union of the Homeless and the National Welfare Rights

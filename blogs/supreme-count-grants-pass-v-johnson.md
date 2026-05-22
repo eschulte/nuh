@@ -6,10 +6,6 @@ tags:
 hashtags:
 date: 2024-04-08
 title: Supreme Court Case Grants Pass v Johnson
-anchors:
-  - text: blog
-    icon: fa-bullhorn # maybe fa-pen as another alternative
-    link: /blog
 ---
 
 On Friday, January 12, the United States Supreme Court announced it
