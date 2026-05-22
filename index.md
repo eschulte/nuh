@@ -1,8 +1,6 @@
 ---
 layout: default
 title: National Union of the Homeless
-# All icons are from https://fontawesome.com/icons?d=gallery
-# fa-fist-raised
 ---
 
 ## Mission

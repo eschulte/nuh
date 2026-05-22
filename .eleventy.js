@@ -18,8 +18,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLiquidFilter("fixDate", function(value){
     value.setTime(value.getTime() + (5*60*60*1000));
     return value; })
-
+	
   eleventyConfig.addPassthroughCopy("admin");
 
+  eleventyConfig.addCollection("news", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("news/*.md");
+  });
+  
   return config;
 };
