@@ -5,10 +5,6 @@ tags:
 hashtags:
 date: 2024-09-29
 title: North Carolina - Attacks on the Poor and Unhoused
-anchors:
-  - text: blog
-    icon: fa-bullhorn # maybe fa-pen as another alternative
-    link: /blog
 ---
 
 In Raleigh and Wake County, North Carolina (the state capital and its associated county), there are over 6,000 homeless individuals seeking services, over 5,100 homeless children attending Wake County Schools, and over 99,400 individuals in poverty at risk of being homeless ([Raleigh Rescue Mission](https://www.raleighrescue.org/the-problem/community-need/)).  This means approximately 1 in 12 people in Wake County are at risk of homelessness (using the [Census](https://www.census.gov/quickfacts/fact/table/wakecountynorthcarolina/LFE041222) 2023 population estimate).  The Wake County Point-In-Time (PIT) Count (the count of all individuals experiencing [literal homelessness](https://www.hudexchange.info/homelessness-assistance/coc-esg-virtual-binders/coc-esg-homeless-eligibility/four-categories/category-1/) on a single night) for 2023 was 683 households, or 916 people, 14% of which were youth between the ages of 18-24 ([Wake County Continuum of Care \- NC 507](https://wakenc507.org/data/2023-pit/)).  PIT Counts are generally recognized as undercounts.

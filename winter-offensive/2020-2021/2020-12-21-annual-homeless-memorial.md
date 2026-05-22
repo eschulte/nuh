@@ -3,10 +3,6 @@ layout: default
 tags: 2020-2021
 date: 2020-12-21
 title: Annual National Homeless Memorial Day
-anchors:
-  - text: winter-offensives
-    icon: fa-snowflake # consider: fa-calendar, fa-bullhorn, fa-th (grid)
-    link: /winter-offensive
 ---
 
 As part of the NUH's Winter Offensive we will hold our Annual National
