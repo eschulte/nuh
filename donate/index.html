@@ -1,46 +1,184 @@
 <!DOCTYPE html>
 <html>
-  
-  <title>Donate to NUH</title>
-  
-  <meta charset="UTF-8">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Design by Eric Schulte, source at https://github.com/eschulte/nuh. -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.0/css/all.css">
-  <link rel="stylesheet" href="/style.css">
-  <link rel="icon" href="/favicon.ico">
-  <script src="https://www.google.com/recaptcha/api.js"></script>
-  <body class="w3-light-grey">
+  <head>
+    <title>Donate</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="The National Union of the Homeless (NUH) is made up of members currently and formerly experiencing homelessness as well as organizers understanding this is a fight for the survival of all the poor and dispossessed in our nation. The power the NUH is proof that we can speak for ourselves, think for ourselves, and organize together to lead not just ourselves but the nation in changing the very system that continues to create homelessness every day in this country.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" property="og:title" content="Donate">
+    <meta name="type" property="og:type" content="website">
+    <meta name="image" property="og:image" content=".">
+    <!-- Design by Eric Schulte, source at https://github.com/eschulte/nuh. -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/favicon.ico">
+  </head>
+<body class="w3-light-grey">
 
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-      <div class="w3-bar w3-white w3-card" id="myNavbar">
-        <a href="/" class="w3-bar-item w3-button w3-wide" onclick="navbar_hide()"><i class="nuh-icon"></i> NUH</a>
+  <!-- Header / Home-->
+  <header class="w3-display-container w3-wide w3-grayscale-min" style="padding-top: 3em;" id="home">
+    <div class="vertical-container">
+      <img alt="NUH Logo" class="logo w3-round" src="/img/NUH_logo_Idea.jpeg">
+      <div class="w3-hide-small">
+        <h1 class="w3-huge w3-text-dark-gray title vertical-center">Donate</h1>
+      </div>
+      <div class="w3-hide-large w3-hide-medium">
+        <h1 class="w3-large w3-text-dark-gray title vertical-center">Donate</h1>
       </div>
     </div>
-    <div style="padding-top:2em;">
-    </div>
+  </header>
 
-    <div class="w3-container form-wrap">
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="/#home" class="w3-bar-item w3-button w3-wide" onclick="navbar_hide()"><i class="nuh-icon"></i> NUH</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        
+        
+        
+        
 
-      <!-- Title with logo -->
-      <div class="w3-display-container w3-wide w3-grayscale-min" id="home">
-        <div class="vertical-container">
-          <img alt="NUH Logo" class="logo w3-round" src="/img/NUH_logo_Idea.jpeg">
-          <div class="w3-hide-small">
-            <h1 class="w3-huge w3-text-dark-gray title vertical-center">Donate</h1>
-          </div>
-          <div class="w3-hide-large w3-hide-medium">
-            <h1 class="w3-large w3-text-dark-gray title vertical-center">Donate</h1>
-          </div>
-        </div>
+        
+        <a href="/#mission" class="w3-bar-item w3-button">MISSION</a>
+        
+        
+        
+        
+        
+
+        
+        <a href="/#history-(who-we-are)" class="w3-bar-item w3-button"><i class="fas fa-user"></i> HISTORY</a>
+        
+        
+        
+        
+        
+
+        
+        <a href="/events" class="w3-bar-item w3-button"><i class="fas fa-calendar"></i> EVENTS</a>
+        
+        
+        
+        
+        
+
+        
+        <a href="/winter-offensive" class="w3-bar-item w3-button"><i class="fas fa-snowflake"></i> WINTER-OFFENSIVES</a>
+        
+        
+        
+        
+        
+
+        
+        <a href="/blog" class="w3-bar-item w3-button"><i class="fas fa-bullhorn"></i> BLOG</a>
+        
+        
+        
+        
+        
+
+        
+        <a href="/#locals" class="w3-bar-item w3-button"><i class="fas fa-hands-helping"></i> LOCALS</a>
+        
+        
+        
+        
+        
+
+        
+        <a href="/donate" class="w3-bar-item w3-button"><i class="fas fa-donate"></i> DONATE</a>
+        
+        
+        
+        
+        
+
+        
+        <a href="/contact" class="w3-bar-item w3-button"><i class="fas fa-envelope"></i> JOIN US</a>
+        
+        
+        
+        
+        
+
+        
+        <a href="/news" class="w3-bar-item w3-button"><i class="fas fa-newspaper"></i> NEWS</a>
+        
+        
       </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="navbar_toggle()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
 
-      <div class="w3-xlarge">
-        <p>Donate to support the National Union of the Homeless in our work to
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top w3-card" style="margin-top:46px">
+    
+    
+    
+    
+
+    <a href="/#mission" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">MISSION</a>
+    
+    
+    
+    
+
+    <a href="/#history-(who-we-are)" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">HISTORY</a>
+    
+    
+    
+    
+
+    <a href="/events" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">EVENTS</a>
+    
+    
+    
+    
+
+    <a href="/winter-offensive" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">WINTER-OFFENSIVES</a>
+    
+    
+    
+    
+
+    <a href="/blog" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">BLOG</a>
+    
+    
+    
+    
+
+    <a href="/#locals" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">LOCALS</a>
+    
+    
+    
+    
+
+    <a href="/donate" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">DONATE</a>
+    
+    
+    
+    
+
+    <a href="/contact" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">JOIN US</a>
+    
+    
+    
+    
+
+    <a href="/news" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">NEWS</a>
+    
+  </div>
+
+  <div class="w3-container">
+    <p>Donate to support the National Union of the Homeless in our work to
 end homelessness and poverty, to fight for the human right to life,
 liberty, and the pursuit of happiness, and for social and economic
 justice for all.</p>
@@ -49,17 +187,31 @@ justice for all.</p>
 </form>
 Venmo @NationalUnionofthe-Homeless
 
-      </div>
-    </div>
+  </div>
+  <p>
+    <center>
+      For more information and to get involved contact:
+      <a href="mailto:2020nuh@gmail.com">2020nuh@gmail.com</a>
+    </center>
+  </p>
+</body>
 
-    <p>
-      <center>
-        For more information and to get involved contact:
-        <a href="mailto:2020nuh@gmail.com">2020nuh@gmail.com</a>
-      </center>
-    </p>
-  </body>
-
-  
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function navbar_toggle() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+  function navbar_hide() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") != -1) {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+</script>
 
 </html>
