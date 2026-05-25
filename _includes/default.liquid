@@ -38,19 +38,43 @@
       <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small">
         {% for anchor in anchors %}
-        {% if anchor.slug %}
-        {% assign link = "#" | append: anchor.slug %}
-        {% elsif anchor.link %}
-        {% assign link = anchor.link %}
-        {% else %}
-        {% assign link = "#" | append: anchor.text %}
-        {% endif %}
-
-        {% if anchor.icon %}
-        <a href="{{ link | url }}" class="w3-bar-item w3-button"><i class="fas {{ anchor.icon }}"></i> {{ anchor.text | upcase }}</a>
-        {% else %}
-        <a href="{{ link | url }}" class="w3-bar-item w3-button">{{ anchor.text | upcase }}</a>
-        {% endif %}
+          {% if anchor.children %}
+            <!-- Dropdown container -->
+            <div class="w3-dropdown-hover">
+              <button class="w3-button">
+                {% if anchor.icon %}<i class="fas {{ anchor.icon }}"></i> {% endif %}
+                {{ anchor.text | upcase }}
+              </button>
+              <div class="w3-dropdown-content w3-bar-block w3-card">
+                {% for child in anchor.children %}
+                  {% if child.slug %}
+                    {% assign link = "/#" | append: child.slug %}
+                  {% elsif child.link %}
+                    {% assign link = child.link %}
+                  {% else %}
+                    {% assign link = "#" | append: child.text %}
+                  {% endif %}
+                  <a href="{{ link | url }}" class="w3-bar-item w3-button">
+                    {% if child.icon %}<i class="fas {{ child.icon }}"></i> {% endif %}
+                    {{ child.text | upcase }}
+                  </a>
+                {% endfor %}
+              </div>
+            </div>
+          {% else %}
+            <!-- Regular link -->
+            {% if anchor.slug %}
+              {% assign link = "/#" | append: anchor.slug %}
+            {% elsif anchor.link %}
+              {% assign link = anchor.link %}
+            {% else %}
+              {% assign link = "#" | append: anchor.text %}
+            {% endif %}
+            <a href="{{ link | url }}" class="w3-bar-item w3-button">
+              {% if anchor.icon %}<i class="fas {{ anchor.icon }}"></i> {% endif %}
+              {{ anchor.text | upcase }}
+            </a>
+          {% endif %}
         {% endfor %}
       </div>
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -63,15 +87,38 @@
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top w3-card" style="margin-top:46px">
     {% for anchor in anchors %}
-    {% if anchor.slug %}
-    {% assign link = "#" | append: anchor.slug %}
-    {% elsif anchor.link %}
-    {% assign link = anchor.link %}
-    {% else %}
-    {% assign link = "#" | append: anchor.text %}
-    {% endif %}
-
-    <a href="{{ link | url }}" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">{{ anchor.text | upcase }}</a>
+      {% if anchor.children %}
+        <!-- Output the parent as a non-clickable header (optional) -->
+        <div class="w3-bar-item w3-padding-large w3-text-dark-gray">
+          <strong>{{ anchor.text | upcase }}</strong>
+        </div>
+        {% for child in anchor.children %}
+          {% if child.slug %}
+            {% assign link = "/#" | append: child.slug %}
+          {% elsif child.link %}
+            {% assign link = child.link %}
+          {% else %}
+            {% assign link = "#" | append: child.text %}
+          {% endif %}
+          <a href="{{ link | url }}" class="w3-bar-item w3-button w3-padding-large" style="padding-left: 2em !important;" onclick="navbar_toggle()">
+            {% if child.icon %}<i class="fas {{ child.icon }}"></i> {% endif %}
+            {{ child.text | upcase }}
+          </a>
+        {% endfor %}
+      {% else %}
+        <!-- Regular link -->
+        {% if anchor.slug %}
+          {% assign link = "/#" | append: anchor.slug %}
+        {% elsif anchor.link %}
+          {% assign link = anchor.link %}
+        {% else %}
+          {% assign link = "#" | append: anchor.text %}
+        {% endif %}
+        <a href="{{ link | url }}" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">
+          {% if anchor.icon %}<i class="fas {{ anchor.icon }}"></i> {% endif %}
+          {{ anchor.text | upcase }}
+        </a>
+      {% endif %}
     {% endfor %}
   </div>
 
