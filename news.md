@@ -7,12 +7,10 @@ title: In The News
 <div class="w3-row-padding">
 {% endif %}
 
-<div class="w3-half w3-margin-bottom">
-<div class="w3-container w3-card">
-
 {% assign sorted = collections.news | reverse %}
 {% for news in sorted %}
-
+<div class="w3-half w3-margin-bottom">
+<div class="w3-container w3-card">
 {% if news.data.link %}
 ### [{{ news.data.title }}]({{ news.data.link }})
 {% else %}
