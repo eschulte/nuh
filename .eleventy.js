@@ -24,6 +24,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection("news", function(collectionApi) {
     return collectionApi.getFilteredByGlob("news/*.md");
   });
+
+  eleventyConfig.addCollection("resources", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("resources/*.md");
+  });
   
   return config;
 };
