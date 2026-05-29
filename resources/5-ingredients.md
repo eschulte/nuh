@@ -1,13 +1,9 @@
 ---
-layout: default
+layout: resource
 tags: resources
 date: 1999-01-01
 title: "The Methods of Building Leadership and Organizing: Five Ingredients in the Poor Organizing the Poor"
-permalink: /resources/5-ingredients/
 ---
-
-## <div style="text-align: center;">The Methods of Building Leadership and Organizing: Five Ingredients in the Poor Organizing the Poor</div>
-
 #### <div style="text-align: center;">By Willie Baptist and Phil Wider</div>
 
 1) [Introduction](#i.-introduction)

@@ -26,7 +26,10 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addCollection("resources", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("resources/*.md");
+    return collectionApi.getFilteredByGlob("resources/*.md").filter(item => {
+    // Exclude the index page
+    return item.inputPath !== "./resources/index.md";
+    }).reverse();
   });
   
   return config;
