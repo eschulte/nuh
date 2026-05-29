@@ -61,12 +61,12 @@
           
         
           
-            <!-- Dropdown container -->
+            <!-- Dropdown container with clickable parent link -->
             <div class="w3-dropdown-hover">
-              <button class="w3-button">
+              <a href="/resources" class="w3-button">
                 <i class="fas fa-hammer"></i> 
                 RESOURCES
-              </button>
+              </a>
               <div class="w3-dropdown-content w3-bar-block w3-card">
                 
                   
@@ -93,12 +93,12 @@
           
         
           
-            <!-- Dropdown container -->
+            <!-- Dropdown container with clickable parent link -->
             <div class="w3-dropdown-hover">
-              <button class="w3-button">
+              <a href="#" class="w3-button">
                 <i class="fas fa-info-circle"></i> 
                 ABOUT US
-              </button>
+              </a>
               <div class="w3-dropdown-content w3-bar-block w3-card">
                 
                   
@@ -196,10 +196,14 @@
       
     
       
-        <!-- Output the parent as a non-clickable header (optional) -->
-        <div class="w3-bar-item w3-padding-large w3-text-dark-gray">
-          <strong>RESOURCES</strong>
-        </div>
+        <!-- Parent: clickable if anchor.link exists, otherwise just text -->
+        
+          <a href="/resources" class="w3-bar-item w3-button w3-padding-large" onclick="navbar_toggle()">
+            <i class="fas fa-hammer"></i> 
+            RESOURCES
+          </a>
+        
+        <!-- Children: indented -->
         
           
             
@@ -223,10 +227,13 @@
       
     
       
-        <!-- Output the parent as a non-clickable header (optional) -->
-        <div class="w3-bar-item w3-padding-large w3-text-dark-gray">
-          <strong>ABOUT US</strong>
-        </div>
+        <!-- Parent: clickable if anchor.link exists, otherwise just text -->
+        
+          <div class="w3-bar-item w3-padding-large w3-text-dark-gray">
+            <strong>ABOUT US</strong>
+          </div>
+        
+        <!-- Children: indented -->
         
           
             
