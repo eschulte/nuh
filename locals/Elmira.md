@@ -4,7 +4,7 @@ tags: local
 name: Elmira Union of the Homeless
 location: Elmira, New York
 ---
-![Meeting Schedule](/img/elmira_meeting_dates.JPG)
+![Flyer](/img/elmira_flyer_aug26.jpg)
 
 
 * You Only Get What You Are Organized to Take!
